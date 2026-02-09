@@ -340,9 +340,13 @@
             white-space: nowrap;
         }
 
-        /* Remove the dark overlay from hero */
+        /* Remove the global overlay but add it to just the image */
         .hero:before {
             display: none !important;
+        }
+
+        .hero>img {
+            filter: brightness(0.7);
         }
 
         /* Center the Selected Projects heading like "What I Offer" */
@@ -1444,24 +1448,6 @@
                         </div>
 
                     </div>
-
-                    <div class="portfolio-bottom" data-aos="fade-up" data-aos-delay="400">
-                        <div class="row align-items-center">
-                            <div class="col-lg-12 text-center">
-                                <h3>Interested in a partnership?</h3>
-                            </div>
-                            <div class="col-lg-12 text-center">
-                                <div class="cta-button-wrapper">
-                                    <div class="profile-circle">
-                                        <img src="assets/img/profile/Jovianne.jpg" alt="Jovianne Tjiunardi">
-                                    </div>
-                                    <a href="#contact" class="btn btn-accent">Your New Hire</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
 
         </section>
 

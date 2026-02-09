@@ -27,15 +27,60 @@
     <link href="assets/css/main.css" rel="stylesheet">
 
     <style>
-        /* --- GLOBAL STYLES --- */
+        /* --- GLOBAL GRADIENT BACKGROUND --- */
         body,
         .main,
         .dark-background,
         section,
         .footer {
-            background-color: #585115 !important;
+            background: linear-gradient(to bottom, #112b22, #0f172a) !important;
+            background-attachment: fixed !important;
             color: #ffffff !important;
             font-family: "Raleway", sans-serif;
+        }
+
+        /* Translucent Navbar - Match Home Page */
+        .header {
+            background: linear-gradient(to bottom, rgba(17, 43, 34, 0.85), rgba(15, 23, 42, 0.85)) !important;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 50px;
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% - 40px);
+            max-width: 1000px;
+            padding: 12px 28px !important;
+            z-index: 999;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .header .sitename {
+            color: #f1f5f9 !important;
+            font-size: 1.2rem !important;
+            font-weight: 700;
+        }
+
+        .header .navmenu ul {
+            display: flex;
+            gap: 8px;
+        }
+
+        .header .navmenu ul li a {
+            color: rgba(241, 245, 249, 0.7) !important;
+            font-weight: 500;
+            font-size: 0.9rem;
+            padding: 8px 16px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .header .navmenu ul li a:hover,
+        .header .navmenu ul li a.active {
+            color: #f1f5f9 !important;
+            background: rgba(255, 255, 255, 0.1);
         }
 
         a {

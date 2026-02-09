@@ -41,15 +41,28 @@
             --offmenu-glass-border: rgba(255, 255, 255, 0.1);
         }
 
-        /* --- Base Typography: Inter with tight tracking --- */
-        body,
-        .main,
-        .dark-background,
-        section {
-            background: linear-gradient(to bottom, var(--offmenu-green-dark), var(--offmenu-slate)) !important;
+        /* --- GLOBAL: Fixed Slate-900 Background --- */
+        body {
+            background: #0f172a !important;
             background-attachment: fixed !important;
-            color: var(--offmenu-text) !important;
             font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* --- FLOATING CARD LAYOUT --- */
+        .main {
+            background: linear-gradient(to bottom, var(--offmenu-green-dark), var(--offmenu-slate)) !important;
+            width: 95%;
+            max-width: 1400px;
+            margin: 16px auto;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        section {
+            color: var(--offmenu-text) !important;
         }
 
         h1,
@@ -123,19 +136,9 @@
             background: rgba(255, 255, 255, 0.1);
         }
 
-        .header .btn-getstarted {
-            background: #111 !important;
-            color: #fff !important;
-            border-radius: 50px;
-            padding: 12px 24px;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
-        }
-
-        .header .btn-getstarted:hover {
-            background: var(--offmenu-accent) !important;
-            transform: scale(1.05);
+        /* Logo spacing to match nav items */
+        .header .logo {
+            margin-right: 8px !important;
         }
 
         /* =====================================================
@@ -184,6 +187,7 @@
             top: auto !important;
         }
 
+        /* ===== OFFMENU HOVER REVEAL ===== */
         .portfolio-card {
             position: relative;
             overflow: hidden;
@@ -201,124 +205,121 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 0.5s ease, filter 0.5s ease;
+            transition: transform 0.7s ease;
         }
 
         .portfolio-card:hover .portfolio-image-container img {
-            transform: scale(1.08);
-            filter: brightness(0.5);
+            transform: scale(1.05);
         }
 
+        /* The Reveal Overlay */
         .portfolio-card .portfolio-overlay {
             position: absolute;
             inset: 0;
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(4px);
             display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            padding: 24px;
+            align-items: center;
+            justify-content: center;
             opacity: 0;
-            transition: opacity 0.4s ease;
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 70%);
+            transition: opacity 0.3s ease;
         }
 
         .portfolio-card:hover .portfolio-overlay {
             opacity: 1;
         }
 
-        .portfolio-overlay .project-category {
-            color: var(--offmenu-accent);
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            margin-bottom: 6px;
-            transform: translateY(15px);
-            transition: transform 0.4s ease;
-        }
-
-        .portfolio-card:hover .portfolio-overlay .project-category {
-            transform: translateY(0);
-        }
-
         .portfolio-overlay h4 {
             color: #fff;
-            font-size: 1.3rem;
+            font-size: 1.8rem;
             font-weight: 700;
+            text-align: center;
             margin: 0;
-            transform: translateY(15px);
-            transition: transform 0.4s ease 0.05s;
+            padding: 20px;
         }
 
-        .portfolio-card:hover .portfolio-overlay h4 {
-            transform: translateY(0);
-        }
-
-        .portfolio-actions {
-            margin-top: 16px;
-            opacity: 0;
-            transform: translateY(10px);
-            transition: all 0.3s ease 0.1s;
-        }
-
-        .portfolio-card:hover .portfolio-actions {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
+        /* Hide all other overlay elements */
+        .portfolio-overlay .project-category,
+        .portfolio-overlay .portfolio-info,
+        .portfolio-actions,
         .portfolio-meta {
             display: none;
         }
 
         /* =====================================================
-           TASK 3: CURVED CTA FOOTER
+           TYPOGRAPHY-LED WHITE FOOTER
            ===================================================== */
         .portfolio-bottom {
-            background: var(--offmenu-emerald);
-            border-radius: 40px 40px 0 0;
-            padding: 80px 40px;
-            margin-top: 60px;
+            background: #f8fafc;
+            padding: 100px 40px;
+            margin-top: 0;
             text-align: center;
         }
 
         .portfolio-bottom h3 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             font-weight: 800;
-            letter-spacing: -0.02em;
-            margin-bottom: 24px;
+            letter-spacing: -0.03em;
+            line-height: 1;
+            margin-bottom: 40px;
+            color: #111;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (min-width: 768px) {
+            .portfolio-bottom h3 {
+                font-size: 4.5rem;
+            }
         }
 
         .portfolio-bottom p {
-            font-size: 1.1rem;
-            opacity: 0.8;
-            margin-bottom: 32px;
+            display: none;
         }
 
         .portfolio-bottom .btn-accent {
-            background: #fff !important;
-            color: #111 !important;
+            background: #111 !important;
+            color: #fff !important;
             border-radius: 50px;
-            padding: 16px 32px;
+            padding: 18px 36px;
             font-weight: 600;
             font-size: 1rem;
             display: inline-flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
             transition: all 0.3s ease;
+            text-decoration: none;
         }
 
         .portfolio-bottom .btn-accent:hover {
             transform: scale(1.05);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         }
 
         .portfolio-bottom .btn-accent::after {
             content: '→';
-            font-size: 1.2rem;
+            font-size: 1.3rem;
         }
 
-        /* Hero section spacing for floating nav */
+        /* ===== HERO INSET LAYERING ===== */
         .hero {
-            padding-top: 120px !important;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            width: 95%;
+            margin: 16px auto 0;
+            border-radius: 24px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hero img {
+            border-radius: 24px;
+        }
+
+        /* Fix Experience Section Background */
+        #resume.resume-fintech {
+            background: transparent !important;
         }
 
 
@@ -686,7 +687,6 @@
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
 
-            <a class="btn-getstarted" href="#contact">Get Started</a>
 
         </div>
     </header>
@@ -1339,8 +1339,8 @@
                     <div class="portfolio-bottom" data-aos="fade-up" data-aos-delay="400">
                         <div class="row align-items-center">
                             <div class="col-lg-12 text-center">
-                                <h3>Interested in a partnership?</h3>
-                                <p>I'd love to hear about your project. Let's create something amazing together.</p>
+                                <h3>Work seamlessly with a creative team that's built to match your pace and exceed your
+                                    expectations.</h3>
                             </div>
                             <div class="col-lg-12 text-center">
                                 <a href="#contact" class="btn btn-accent">Book a Call</a>

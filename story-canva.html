@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Canva Portfolio Story - Jovianne's Portfolio</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <style>
+        /* --- GLOBAL STYLES --- */
+        body, .main, .dark-background, section, .footer {
+            background-color: #585115 !important; /* Your chosen Green/Brown */
+            color: #ffffff !important;
+            font-family: "Raleway", sans-serif;
+        }
+        /* Fix Link Hover Colors */
+        a { color: #ff4a17; text-decoration: none; transition: 0.3s; }
+        a:hover { color: #fff; }
+
+        /* --- STORY PAGE SPECIFIC STYLES --- */
+        .story-header { padding-top: 120px; padding-bottom: 60px; }
+
+        .back-arrow-link {
+            color: #ff4a17; font-weight: 700; display: inline-block; margin-bottom: 30px; font-size: 1.1rem;
+        }
+        .back-arrow-link i { margin-right: 8px; }
+
+        .story-title { font-size: 3.5rem; font-weight: 800; margin-bottom: 15px; }
+        .story-subtitle { color: #ff4a17; display: block; margin-bottom: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;}
+        .story-meta { color: rgba(255,255,255,0.6); font-style: italic; margin-bottom: 30px; font-size: 0.9rem;}
+
+        .story-content p { font-size: 1.1rem; line-height: 1.8; color: rgba(255,255,255,0.9); margin-bottom: 25px; }
+        .story-content h3 { color: #ff4a17; margin-top: 50px; margin-bottom: 25px; font-size: 1.8rem; font-weight: 700; }
+
+        /* --- UPDATED "FINAL LOOK" STYLES (MATCHING INDEX TOOLKIT) --- */
+        .final-look-container {
+            text-align: center;
+            margin-top: 80px;
+            margin-bottom: 50px;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.25); /* Darker glass background */
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .final-look-title {
+            font-size: 1.75rem; /* Matched to h3 size */
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 25px;
+        }
+
+        .btn-live-site {
+            background: #ff4a17;
+            color: #ffffff !important; /* Force white text */
+            font-size: 0.9rem; /* Matched to Index Tabs */
+            font-weight: 600;
+            padding: 10px 30px; /* Matched to Index Tabs */
+            border-radius: 50px;
+            display: inline-block;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 74, 23, 0.4); /* Glow shadow */
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-live-site:hover {
+            background: #e03a0d;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 74, 23, 0.6);
+        }
+
+        .btn-live-site i { margin-left: 8px; }
+
+        /* Tech Stack Styles */
+        .tech-stack-container h4 { text-align: center; margin-bottom: 25px; color: #fff; text-transform: uppercase; letter-spacing: 2px; font-size: 1rem;}
+        .tech-tags {
+            display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; margin-top: 20px;
+        }
+        .tech-tag {
+            background: rgba(255, 74, 23, 0.15);
+            color: #ff4a17;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 1px solid rgba(255, 74, 23, 0.3);
+        }
+
+        /* Banner Style */
+        .banner-frame {
+            width: 100%;
+            height: 250px;
+            background: #E5C082; /* Kept your specific Canva BG color */
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin-bottom: 3rem;
+        }
+
+        .banner-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+
+<body class="story-page">
+
+<header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+            <img src="assets/img/favicon.png" alt="" style="max-height: 50px; margin-right: 10px;">
+            <h1 class="sitename">Jovianne's Portfolio</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+            <ul>
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#cv-download">Resume</a></li>
+                <li><a href="#resume">Experience & Background</a>
+                </li> <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <a class="btn-getstarted" href="index.html#about">Get Started</a>
+
+    </div>
+</header>
+
+<main class="main">
+
+    <section class="story-header section">
+        <div class="container" data-aos="fade-up">
+
+            <a href="index.html#portfolio" class="back-arrow-link"><i class="bi bi-arrow-left"></i> Back to Portfolio</a>
+
+            <span class="story-subtitle">No-Code Development & Resource Optimisation</span>
+            <h1 class="story-title">Digital Portfolio: Maximising SaaS Potential</h1>
+            <div class="story-meta"><i class="bi bi-calendar me-2"></i> 2024 &nbsp;|&nbsp; <i class="bi bi-clock me-2 ms-3"></i> 1 min read</div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="banner-frame">
+                        <img src="assets/img/portfolio/portfolio-banner-4.png" alt="Canva Website Portfolio" class="banner-image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row story-content justify-content-center">
+                <div class="col-lg-9">
+                    <p>In the tech world, there is a misconception that professional results require enterprise-level software. I challenge this view through a philosophy of <strong>Platform Agnosticism</strong>. The goal is not to use the most expensive tool but to extract the maximum value from the most efficient one. Canva began as a simple graphic design interface but strategically scaled its architecture to become a comprehensive visual suite, now capable of hosting full responsive websites.</p>
+
+                    <h3>The Challenge & Solution</h3>
+                    <p>I recognised that many professionals underutilise the full stack capabilities of these accessible platforms. Instead of investing in complex, high-cost development environments, I conducted a personal <strong>Cost-Benefit Analysis</strong>. I realised I could achieve a faster <strong>Time-to-Market</strong> for my portfolio by mastering the advanced features of a free, low-code platform. Why complicate the process when the objective is clear visual communication?</p>
+
+                    <h3>The Outcome</h3>
+                    <p>This project served as my <strong>Proof of Concept</strong>. By building a fully functional digital social media portfolio on Canva, I demonstrated high <strong>Digital Fluency</strong> and adaptability. It proves that I can look at a standard tool, identify its latent potential, and leverage it to deliver a polished, professional product with zero overhead costs. This is the era of digital efficiency, and I believe in working smarter.</p>
+
+                    <div class="final-look-container">
+                        <h2 class="final-look-title">It's a pretty portfolio, take a look!</h2>
+                        <a href="https://joviannetjiunardiportfolio.my.canva.site" class="btn-live-site" target="_blank">
+                            Check out my social media portfolio site <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="tech-stack-container mt-5 pt-4">
+                        <h4>Skills Applied</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">No-Code Development</span>
+                            <span class="tech-tag">SaaS Optimisation</span>
+                            <span class="tech-tag">Cost-Benefit Analysis</span>
+                            <span class="tech-tag">Canva Visual Suite</span>
+                            <span class="tech-tag">Rapid Prototyping</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio section" style="background-color: rgba(0,0,0,0.15); border-top: 1px solid rgba(255,255,255,0.05);">
+
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Explore More Projects</h2>
+            <p>See how I apply similar strategies across different domains.</p>
+        </div>
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="row gy-4 justify-content-center">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image-container">
+                            <img src="assets/img/portfolio/portfolio-1.jpg" alt="Creative Project" class="img-fluid" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <span class="project-category">Design Experience</span>
+                                    <h4>Interactive Web Platform</h4>
+                                </div>
+                                <div class="portfolio-actions">
+                                    <a href="assets/img/portfolio/portfolio-1.jpg" class="glightbox portfolio-link"><i class="bi bi-plus-lg"></i></a>
+                                    <a href="story-realign.html" class="portfolio-details"><i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image-container">
+                            <img src="assets/img/portfolio/portfolio-2.jpg" alt="Digital Project" class="img-fluid" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <span class="project-category">Digital Experience</span>
+                                    <h4>Marketing Campaign</h4>
+                                </div>
+                                <div class="portfolio-actions">
+                                    <a href="assets/img/portfolio/portfolio-2.jpg" class="glightbox portfolio-link"><i class="bi bi-plus-lg"></i></a>
+                                    <a href="story-borderless.html" class="portfolio-details"><i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image-container">
+                            <img src="assets/img/portfolio/portfolio-3.jpg" alt="Strategy Project" class="img-fluid" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <span class="project-category">Creative Design</span>
+                                    <h4>Food Content Creation</h4>
+                                </div>
+                                <div class="portfolio-actions">
+                                    <a href="assets/img/portfolio/portfolio-3.jpg" class="glightbox portfolio-link"><i class="bi bi-plus-lg"></i></a>
+                                    <a href="story-tiktok.html" class="portfolio-details"><i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer id="footer" class="footer">
+    <div class="container copyright text-center mt-4">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Jovianne's Portfolio</strong> <span>All Rights Reserved</span></p>
+        <div class="credits">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
+    </div>
+</footer>
+
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<div id="preloader"></div>
+
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

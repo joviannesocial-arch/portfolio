@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Borderless CS Story - Jovianne's Portfolio</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <style>
+        /* --- GLOBAL STYLES --- */
+        body, .main, .dark-background, section, .footer {
+            background-color: #585115 !important; /* Your chosen Green/Brown */
+            color: #ffffff !important;
+            font-family: "Raleway", sans-serif;
+        }
+        /* Fix Link Hover Colors */
+        a { color: #ff4a17; text-decoration: none; transition: 0.3s; }
+        a:hover { color: #fff; }
+
+        /* --- STORY PAGE SPECIFIC STYLES --- */
+        .story-header { padding-top: 120px; padding-bottom: 60px; }
+
+        .back-arrow-link {
+            color: #ff4a17; font-weight: 700; display: inline-block; margin-bottom: 30px; font-size: 1.1rem;
+        }
+        .back-arrow-link i { margin-right: 8px; }
+
+        .story-title { font-size: 3.5rem; font-weight: 800; margin-bottom: 15px; }
+        .story-subtitle { color: #ff4a17; display: block; margin-bottom: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;}
+        .story-meta { color: rgba(255,255,255,0.6); font-style: italic; margin-bottom: 30px; font-size: 0.9rem;}
+
+        .story-content p { font-size: 1.1rem; line-height: 1.8; color: rgba(255,255,255,0.9); margin-bottom: 25px; }
+        .story-content h3 { color: #ff4a17; margin-top: 50px; margin-bottom: 25px; font-size: 1.8rem; font-weight: 700; }
+
+        .final-look-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: #FCC96C;
+            margin-top: 80px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .view-website-link {
+            color: #ff4a17; font-size: 1.3rem; font-weight: 700; display: block; text-align: center;
+        }
+
+        .tech-stack-container h4 { text-align: center; margin-bottom: 25px; color: #fff; text-transform: uppercase; letter-spacing: 2px; font-size: 1rem;}
+        .tech-tags {
+            display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; margin-top: 20px;
+        }
+        .tech-tag {
+            background: rgba(255, 74, 23, 0.15);
+            color: #ff4a17;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 1px solid rgba(255, 74, 23, 0.3);
+        }
+
+        /* "Frame" Style Banner */
+        .banner-frame {
+            width: 100%;
+            height: 250px;
+            background: #FCC96C; /* Using the White background you set */
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin-bottom: 3rem;
+        }
+
+        .banner-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+
+<body class="story-page">
+
+<header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+            <img src="assets/img/favicon.png" alt="" style="max-height: 50px; margin-right: 10px;">
+            <h1 class="sitename">Jovianne's Portfolio</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+            <ul>
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#cv-download">Resume</a></li>
+                <li><a href="#resume">Experience & Background</a>
+                </li> <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <a class="btn-getstarted" href="index.html#about">Get Started</a>
+
+    </div>
+</header>
+
+<main class="main">
+
+    <section class="story-header section">
+        <div class="container" data-aos="fade-up">
+
+            <a href="index.html#portfolio" class="back-arrow-link"><i class="bi bi-arrow-left"></i> Back to Portfolio</a>
+
+            <span class="story-subtitle">Data Visualisation & Marketing Strategy</span>
+            <h1 class="story-title">Borderless CS: Translating Cyber Threats into Business Value</h1>
+            <div class="story-meta"><i class="bi bi-calendar me-2"></i> 2024 &nbsp;|&nbsp; <i class="bi bi-clock me-2 ms-3"></i> 2 min read</div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="banner-frame">
+                        <img src="assets/img/portfolio/portfolio-banner-2.png" alt="Borderless CS Campaign Assets" class="banner-image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row story-content justify-content-center">
+                <div class="col-lg-9">
+                    <p>At Borderless CS, a cybersecurity firm, my challenge was to take dense, technical threat data and make it relevant for business owners. Using tools like <strong>HubSpot</strong> and <strong>Mailchimp</strong>, I focused on delivering value, turning complex industry reports into clear, actionable updates.</p>
+
+                    <h3>The Challenge & Solution</h3>
+                    <p>The core of my work involved deep research. I analysed complex company reports and cybersecurity annual reviews to extract the stats that mattered most. But numbers on a spreadsheet don't scare anyone; visual stories do. I used my design skills to translate dry statistics; like the $80 million lost to business email compromise, into striking, easy-to-digest infographics and charts.</p>
+
+                    <h3>The Outcome</h3>
+                    <p>This approach bridged the gap between complex risk assessments and immediate business action. It sharpened my ability to act as a "data translator." Whether I'm designing a campaign or presenting a business case, I know how to find the signal in the noise and present it in a way that drives decision-making.</p>
+
+                    <div class="tech-stack-container mt-5 pt-4">
+                        <h4>Tech Stack Used</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HubSpot</span>
+                            <span class="tech-tag">Mailchimp</span>
+                            <span class="tech-tag">Data Visualisation</span>
+                            <span class="tech-tag">Market Research</span>
+                            <span class="tech-tag">Canva</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio section" style="background-color: rgba(0,0,0,0.15); border-top: 1px solid rgba(255,255,255,0.05);">
+
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Explore More Projects</h2>
+            <p>See how I apply similar strategies across different domains.</p>
+        </div>
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="row gy-4 justify-content-center">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image-container">
+                            <img src="assets/img/portfolio/portfolio-1.jpg" alt="Creative Project" class="img-fluid" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <span class="project-category">Design Experience</span>
+                                    <h4>Interactive Web Platform</h4>
+                                </div>
+                                <div class="portfolio-actions">
+                                    <a href="assets/img/portfolio/portfolio-1.jpg" class="glightbox portfolio-link"><i class="bi bi-plus-lg"></i></a>
+                                    <a href="story-realign.html" class="portfolio-details"><i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image-container">
+                            <img src="assets/img/portfolio/portfolio-3.jpg" alt="Strategy Project" class="img-fluid" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <span class="project-category">Creative Design</span>
+                                    <h4>Food Content Creation</h4>
+                                </div>
+                                <div class="portfolio-actions">
+                                    <a href="assets/img/portfolio/portfolio-3.jpg" class="glightbox portfolio-link"><i class="bi bi-plus-lg"></i></a>
+                                    <a href="story-tiktok.html" class="portfolio-details"><i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image-container">
+                            <img src="assets/img/portfolio/portfolio-4.jpg" alt="Development Project" class="img-fluid" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <span class="project-category">Branding Strategy</span>
+                                    <h4>Personal Portfolio</h4>
+                                </div>
+                                <div class="portfolio-actions">
+                                    <a href="assets/img/portfolio/portfolio-4.jpg" class="glightbox portfolio-link"><i class="bi bi-plus-lg"></i></a>
+                                    <a href="story-canva.html" class="portfolio-details"><i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer id="footer" class="footer">
+    <div class="container copyright text-center mt-4">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Jovianne's Portfolio</strong> <span>All Rights Reserved</span></p>
+        <div class="credits">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
+    </div>
+</footer>
+
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<div id="preloader"></div>
+
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

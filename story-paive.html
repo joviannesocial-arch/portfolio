@@ -333,6 +333,195 @@
             letter-spacing: 1px;
             margin-bottom: 20px;
         }
+
+        /* --- RESULTS SHOWCASE SECTION --- */
+        .results-section {
+            background-color: #1a1a1a !important;
+            border-radius: 24px;
+            padding: 60px 50px;
+            margin: 60px 0;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .pill-badge {
+            background: #FF4D29;
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 800;
+            padding: 6px 16px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+
+        .results-headline {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1.2;
+            margin-bottom: 30px;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 35px;
+        }
+
+        .metric-mini-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 15px 20px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .metric-mini-card i {
+            color: #FF4D29;
+            font-size: 1.2rem;
+        }
+
+        .metric-mini-card span {
+            color: #9ca3af;
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .feature-item {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 30px;
+        }
+
+        .feature-item li {
+            position: relative;
+            padding-left: 25px;
+            color: #9ca3af;
+            font-size: 1.05rem;
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+
+        .feature-item li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 8px;
+            height: 8px;
+            background: #FF4D29;
+            border-radius: 50%;
+        }
+
+        .btn-showcase-group {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn-live {
+            background: #ffffff;
+            color: #1a1a1a !important;
+            padding: 12px 28px;
+            border-radius: 8px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .btn-live:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-github {
+            background: transparent;
+            color: #ffffff !important;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 12px 28px;
+            border-radius: 8px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .btn-github:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: #ffffff;
+        }
+
+        /* Mock Browser Window */
+        .browser-mockup {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            z-index: 2;
+        }
+
+        .browser-header {
+            background: #2a2a2a;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            padding: 0 15px;
+            gap: 6px;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+
+        .dot-red {
+            background: #ff5f56;
+        }
+
+        .dot-yellow {
+            background: #ffbd2e;
+        }
+
+        .dot-green {
+            background: #27c93f;
+        }
+
+        .browser-content {
+            background: #1a1a1a;
+            aspect-ratio: 16/10;
+        }
+
+        .browser-content img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .offset-card {
+            position: absolute;
+            top: 20px;
+            right: -10px;
+            width: 100%;
+            height: 100%;
+            background: #FF4D29;
+            border-radius: 12px;
+            z-index: 1;
+            opacity: 0.1;
+            transform: rotate(2deg);
+        }
     </style>
 </head>
 
@@ -520,29 +709,63 @@
                         </div>
 
                         <!-- ==================== STEP 4: FINAL PROTOTYPE ==================== -->
-                        <div class="process-step" data-aos="fade-up">
-                            <span class="step-number">Step 4 — Final Prototype</span>
-                            <h4>The Result: A Production-Ready Dashboard</h4>
-                            <p>The final prototype is a fully interactive React application built with <strong>Vite,
-                                    Tailwind CSS, Framer Motion, and Recharts</strong>. It renders a complete career
-                                intelligence dashboard with:</p>
+                        <!-- ==================== STEP 4: RESULTS SHOWCASE ==================== -->
+                        <div class="results-section" data-aos="fade-up">
+                            <div class="row align-items-center">
+                                <!-- Left Column: Content -->
+                                <div class="col-lg-6 mb-5 mb-lg-0">
+                                    <div class="pill-badge">Step 4 — Final Output</div>
+                                    <h2 class="results-headline">A Production-Ready Intelligence Dashboard</h2>
 
-                            <ul style="color: rgba(255,255,255,0.85); font-size: 1.05rem; line-height: 2;">
-                                <li><strong>4 key metric cards</strong> — Time Saved, Salary Range, Market Demand,
-                                    Target Role</li>
-                                <li><strong>Animated match score ring</strong> (87%) with SVG draw-in animation</li>
-                                <li><strong>Progress chart</strong> showing match score growth over 8 weeks</li>
-                                <li><strong>Prioritised skill gap analysis</strong> with time estimates and resource
-                                    counts</li>
-                                <li><strong>5-step career roadmap</strong> as an interactive vertical timeline</li>
-                                <li><strong>Collapsible sidebar</strong> with smooth Framer Motion transitions</li>
-                                <li><strong>AI-powered search bar</strong> with contextual placeholder</li>
-                            </ul>
+                                    <div class="metrics-grid">
+                                        <div class="metric-mini-card">
+                                            <i class="bi bi-lightning-charge"></i>
+                                            <span>Speed: 4.5h Saved</span>
+                                        </div>
+                                        <div class="metric-mini-card">
+                                            <i class="bi bi-eye"></i>
+                                            <span>Fidelity: High</span>
+                                        </div>
+                                        <div class="metric-mini-card">
+                                            <i class="bi bi-layers"></i>
+                                            <span>Stack: React/Vite</span>
+                                        </div>
+                                        <div class="metric-mini-card">
+                                            <i class="bi bi-check-circle"></i>
+                                            <span>Status: Ready</span>
+                                        </div>
+                                    </div>
 
-                            <!-- TODO: Replace with screenshots of the final dashboard -->
-                            <div class="image-placeholder" data-aos="fade-up">
-                                <i class="bi bi-laptop"></i>
-                                <p>Final dashboard screenshot(s) go here</p>
+                                    <ul class="feature-item">
+                                        <li>4 key metric cards — Time Saved, Salary, Market Demand.</li>
+                                        <li>Animated match score ring (87%) with SVG draw-in.</li>
+                                        <li>Progress chart showing growth over 8 weeks.</li>
+                                        <li>Prioritised skill gap analysis with resource counts.</li>
+                                        <li>Interactive vertical timeline for career roadmaps.</li>
+                                    </ul>
+
+                                    <div class="btn-showcase-group">
+                                        <a href="#" class="btn-live">View Live Demo</a>
+                                        <a href="#" class="btn-github">View Github</a>
+                                    </div>
+                                </div>
+
+                                <!-- Right Column: Visual -->
+                                <div class="col-lg-6 position-relative">
+                                    <div class="offset-card"></div>
+                                    <div class="browser-mockup">
+                                        <div class="browser-header">
+                                            <div class="dot dot-red"></div>
+                                            <div class="dot dot-yellow"></div>
+                                            <div class="dot dot-green"></div>
+                                        </div>
+                                        <div class="browser-content">
+                                            <!-- Replace with your actual dashboard screenshot path -->
+                                            <img src="assets/img/portfolio/portfolio-paive.png"
+                                                alt="pAIve Dashboard Preview" loading="lazy">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 

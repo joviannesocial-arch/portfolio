@@ -26,15 +26,301 @@
     <link href="assets/css/main.css" rel="stylesheet">
 
     <style>
-        /* Change the background of the whole page */
+        /* =====================================================
+           OFFMENU AGENCY-STYLE REDESIGN
+           ===================================================== */
+
+        /* --- Design System Variables --- */
+        :root {
+            --offmenu-green-dark: #052e16;
+            --offmenu-slate: #0f172a;
+            --offmenu-emerald: #064e3b;
+            --offmenu-text: #f1f5f9;
+            --offmenu-accent: #ff4a17;
+            --offmenu-glass-bg: rgba(255, 255, 255, 0.08);
+            --offmenu-glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        /* --- Base Typography: Inter with tight tracking --- */
         body,
         .main,
         .dark-background,
         section {
-            background-color: #585115 !important;
-            /* Your chosen Green/Brown */
-            color: #ffffff !important;
+            background: linear-gradient(to bottom, var(--offmenu-green-dark), var(--offmenu-slate)) !important;
+            background-attachment: fixed !important;
+            color: var(--offmenu-text) !important;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
         }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .sitename {
+            font-family: 'Inter', sans-serif !important;
+            letter-spacing: -0.02em;
+            font-weight: 700;
+        }
+
+        /* =====================================================
+           TASK 1: FLOATING PILL NAVBAR
+           ===================================================== */
+        .header {
+            background: var(--offmenu-glass-bg) !important;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--offmenu-glass-border);
+            border-radius: 50px;
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% - 40px);
+            max-width: 1000px;
+            padding: 12px 28px !important;
+            z-index: 999;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            animation: fadeInNav 0.6s ease-out;
+        }
+
+        @keyframes fadeInNav {
+            from {
+                opacity: 0;
+                transform: translateX(-50%) translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0);
+            }
+        }
+
+        .header .sitename {
+            color: var(--offmenu-text) !important;
+            font-size: 1.2rem !important;
+            font-weight: 700;
+        }
+
+        .header .navmenu ul {
+            display: flex;
+            gap: 8px;
+        }
+
+        .header .navmenu ul li a {
+            color: rgba(241, 245, 249, 0.7) !important;
+            font-weight: 500;
+            font-size: 0.9rem;
+            padding: 8px 16px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .header .navmenu ul li a:hover,
+        .header .navmenu ul li a.active {
+            color: var(--offmenu-text) !important;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .header .btn-getstarted {
+            background: #111 !important;
+            color: #fff !important;
+            border-radius: 50px;
+            padding: 12px 24px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .header .btn-getstarted:hover {
+            background: var(--offmenu-accent) !important;
+            transform: scale(1.05);
+        }
+
+        /* =====================================================
+           TASK 2: BENTO GRID PROJECTS SECTION
+           ===================================================== */
+        #portfolio .section-title h2 {
+            font-size: 3.5rem !important;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        #portfolio .section-title p {
+            text-align: left;
+            max-width: 600px;
+            margin: 0;
+        }
+
+        #portfolio .isotope-container {
+            display: grid !important;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        @media (max-width: 992px) {
+            #portfolio .isotope-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 576px) {
+            #portfolio .isotope-container {
+                grid-template-columns: 1fr;
+            }
+
+            #portfolio .section-title h2 {
+                font-size: 2.5rem !important;
+            }
+        }
+
+        #portfolio .portfolio-item {
+            width: 100% !important;
+            position: relative !important;
+            left: auto !important;
+            top: auto !important;
+        }
+
+        .portfolio-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 24px;
+            aspect-ratio: 4/3;
+            cursor: pointer;
+        }
+
+        .portfolio-card .portfolio-image-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .portfolio-card .portfolio-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease, filter 0.5s ease;
+        }
+
+        .portfolio-card:hover .portfolio-image-container img {
+            transform: scale(1.08);
+            filter: brightness(0.5);
+        }
+
+        .portfolio-card .portfolio-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 24px;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 70%);
+        }
+
+        .portfolio-card:hover .portfolio-overlay {
+            opacity: 1;
+        }
+
+        .portfolio-overlay .project-category {
+            color: var(--offmenu-accent);
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 6px;
+            transform: translateY(15px);
+            transition: transform 0.4s ease;
+        }
+
+        .portfolio-card:hover .portfolio-overlay .project-category {
+            transform: translateY(0);
+        }
+
+        .portfolio-overlay h4 {
+            color: #fff;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin: 0;
+            transform: translateY(15px);
+            transition: transform 0.4s ease 0.05s;
+        }
+
+        .portfolio-card:hover .portfolio-overlay h4 {
+            transform: translateY(0);
+        }
+
+        .portfolio-actions {
+            margin-top: 16px;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.3s ease 0.1s;
+        }
+
+        .portfolio-card:hover .portfolio-actions {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .portfolio-meta {
+            display: none;
+        }
+
+        /* =====================================================
+           TASK 3: CURVED CTA FOOTER
+           ===================================================== */
+        .portfolio-bottom {
+            background: var(--offmenu-emerald);
+            border-radius: 40px 40px 0 0;
+            padding: 80px 40px;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .portfolio-bottom h3 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 24px;
+        }
+
+        .portfolio-bottom p {
+            font-size: 1.1rem;
+            opacity: 0.8;
+            margin-bottom: 32px;
+        }
+
+        .portfolio-bottom .btn-accent {
+            background: #fff !important;
+            color: #111 !important;
+            border-radius: 50px;
+            padding: 16px 32px;
+            font-weight: 600;
+            font-size: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .portfolio-bottom .btn-accent:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .portfolio-bottom .btn-accent::after {
+            content: '→';
+            font-size: 1.2rem;
+        }
+
+        /* Hero section spacing for floating nav */
+        .hero {
+            padding-top: 120px !important;
+        }
+
 
         /* Fix Link Hover Colors for readability */
         a {
@@ -865,7 +1151,7 @@
 
             <div class="container section-title" data-aos="fade-up">
                 <span class="subtitle">Portfolio</span>
-                <h2>View My Collection of Works</h2>
+                <h2>Selected Projects</h2>
                 <p>Explore a selection of projects where I translate complex business goals into tangible digital
                     solutions.</p>
             </div>
@@ -1052,13 +1338,12 @@
 
                     <div class="portfolio-bottom" data-aos="fade-up" data-aos-delay="400">
                         <div class="row align-items-center">
-                            <div class="col-lg-8">
-                                <h3>Like what you see?</h3>
-                                <p>If you think I could be a good fit for your company, I would love to hear from you!
-                                    :)</p>
+                            <div class="col-lg-12 text-center">
+                                <h3>Interested in a partnership?</h3>
+                                <p>I'd love to hear about your project. Let's create something amazing together.</p>
                             </div>
-                            <div class="col-lg-4 text-lg-end">
-                                <a href="#contact" class="btn btn-accent">Let's Work Together</a>
+                            <div class="col-lg-12 text-center">
+                                <a href="#contact" class="btn btn-accent">Book a Call</a>
                             </div>
                         </div>
                     </div>

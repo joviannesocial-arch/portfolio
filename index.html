@@ -340,6 +340,98 @@
             white-space: nowrap;
         }
 
+        /* Remove the dark overlay from hero */
+        .hero:before {
+            display: none !important;
+        }
+
+        /* Center the Selected Projects heading like "What I Offer" */
+        #portfolio .section-title {
+            text-align: center !important;
+        }
+
+        #portfolio .section-title h2 {
+            text-align: center !important;
+            font-weight: 400 !important;
+        }
+
+        #portfolio .section-title p {
+            text-align: center !important;
+            max-width: 100% !important;
+            margin: 0 auto !important;
+        }
+
+        /* Offmenu-style CTA Footer - Typography Led */
+        .portfolio-bottom {
+            background: transparent !important;
+            border-radius: 0 !important;
+            padding: 120px 40px 80px !important;
+            margin-top: 80px;
+            text-align: center;
+        }
+
+        .portfolio-bottom h3 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem) !important;
+            font-weight: 400 !important;
+            letter-spacing: -0.03em;
+            margin-bottom: 48px;
+            line-height: 1.1;
+        }
+
+        .portfolio-bottom p {
+            display: none !important;
+        }
+
+        /* New CTA button wrapper with profile image */
+        .cta-button-wrapper {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0;
+            background: linear-gradient(135deg, #f97316 0%, #ec4899 50%, #a855f7 100%);
+            border-radius: 50px;
+            padding: 6px;
+            padding-right: 8px;
+        }
+
+        .cta-button-wrapper .profile-circle {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .cta-button-wrapper .profile-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .portfolio-bottom .btn-accent {
+            background: #fff !important;
+            color: #111 !important;
+            border-radius: 50px;
+            padding: 14px 28px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            margin-left: 8px;
+        }
+
+        .portfolio-bottom .btn-accent:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .portfolio-bottom .btn-accent::after {
+            content: '→';
+            font-size: 1rem;
+        }
+
 
         /* Fix Link Hover Colors for readability */
         a {
@@ -1357,10 +1449,14 @@
                         <div class="row align-items-center">
                             <div class="col-lg-12 text-center">
                                 <h3>Interested in a partnership?</h3>
-                                <p>I'd love to hear about your project. Let's create something amazing together.</p>
                             </div>
                             <div class="col-lg-12 text-center">
-                                <a href="#contact" class="btn btn-accent">Book a Call</a>
+                                <div class="cta-button-wrapper">
+                                    <div class="profile-circle">
+                                        <img src="assets/img/profile/Jovianne.jpg" alt="Jovianne Tjiunardi">
+                                    </div>
+                                    <a href="#contact" class="btn btn-accent">Your New Hire</a>
+                                </div>
                             </div>
                         </div>
                     </div>

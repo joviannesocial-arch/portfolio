@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>pAIve Case Study - Jovianne's Portfolio</title>
-    <meta name="description" content="How I used AI-assisted Vibe Coding to prototype pAIve, a career intelligence platform — reducing build time by 50%.">
+    <meta name="description"
+        content="How I used AI-assisted Vibe Coding to prototype pAIve, a career intelligence platform — reducing build time by 50%.">
     <meta name="keywords" content="AI, Vibe Coding, Product Design, Case Study, Career Tech">
 
     <link href="assets/img/favicon.png" rel="icon">
@@ -13,7 +14,9 @@
 
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -25,28 +28,80 @@
 
     <style>
         /* --- GLOBAL STYLES --- */
-        body, .main, .dark-background, section, .footer {
+        body,
+        .main,
+        .dark-background,
+        section,
+        .footer {
             background-color: #585115 !important;
             color: #ffffff !important;
             font-family: "Raleway", sans-serif;
         }
-        a { color: #ff4a17; text-decoration: none; transition: 0.3s; }
-        a:hover { color: #fff; }
+
+        a {
+            color: #ff4a17;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            color: #fff;
+        }
 
         /* --- STORY PAGE SPECIFIC STYLES --- */
-        .story-header { padding-top: 120px; padding-bottom: 60px; }
+        .story-header {
+            padding-top: 120px;
+            padding-bottom: 60px;
+        }
 
         .back-arrow-link {
-            color: #ff4a17; font-weight: 700; display: inline-block; margin-bottom: 30px; font-size: 1.1rem;
+            color: #ff4a17;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
         }
-        .back-arrow-link i { margin-right: 8px; }
 
-        .story-title { font-size: 3.5rem; font-weight: 800; margin-bottom: 15px; }
-        .story-subtitle { color: #ff4a17; display: block; margin-bottom: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;}
-        .story-meta { color: rgba(255,255,255,0.6); font-style: italic; margin-bottom: 30px; font-size: 0.9rem;}
+        .back-arrow-link i {
+            margin-right: 8px;
+        }
 
-        .story-content p { font-size: 1.1rem; line-height: 1.8; color: rgba(255,255,255,0.9); margin-bottom: 25px; }
-        .story-content h3 { color: #ff4a17; margin-top: 50px; margin-bottom: 25px; font-size: 1.8rem; font-weight: 700; }
+        .story-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .story-subtitle {
+            color: #ff4a17;
+            display: block;
+            margin-bottom: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .story-meta {
+            color: rgba(255, 255, 255, 0.6);
+            font-style: italic;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+        }
+
+        .story-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 25px;
+        }
+
+        .story-content h3 {
+            color: #ff4a17;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
 
         /* --- BANNER STYLE --- */
         .banner-frame {
@@ -60,6 +115,7 @@
             overflow: hidden;
             margin-bottom: 3rem;
         }
+
         .banner-image {
             width: 100%;
             height: 100%;
@@ -76,6 +132,7 @@
             margin-bottom: 40px;
             position: relative;
         }
+
         .process-step .step-number {
             position: absolute;
             top: -18px;
@@ -90,6 +147,7 @@
             letter-spacing: 1px;
             box-shadow: 0 4px 15px rgba(255, 74, 23, 0.4);
         }
+
         .process-step h4 {
             color: #ffffff;
             font-size: 1.4rem;
@@ -97,10 +155,11 @@
             margin-bottom: 15px;
             margin-top: 10px;
         }
+
         .process-step p {
             font-size: 1.05rem;
             line-height: 1.8;
-            color: rgba(255,255,255,0.85);
+            color: rgba(255, 255, 255, 0.85);
             margin-bottom: 0;
         }
 
@@ -113,6 +172,7 @@
             margin: 20px 0;
             font-family: 'Roboto', monospace;
         }
+
         .ai-prompt-block .prompt-label {
             color: #ff4a17;
             font-weight: 700;
@@ -124,6 +184,7 @@
             align-items: center;
             gap: 8px;
         }
+
         .ai-prompt-block .prompt-text {
             color: rgba(255, 255, 255, 0.9);
             font-size: 0.95rem;
@@ -140,14 +201,15 @@
             padding: 60px 30px;
             text-align: center;
             margin: 25px 0;
-            color: rgba(255,255,255,0.4);
+            color: rgba(255, 255, 255, 0.4);
             font-size: 0.95rem;
         }
+
         .image-placeholder i {
             font-size: 2rem;
             display: block;
             margin-bottom: 10px;
-            color: rgba(255,255,255,0.2);
+            color: rgba(255, 255, 255, 0.2);
         }
 
         /* When images are added, use this class */
@@ -166,6 +228,7 @@
             padding: 30px 35px;
             margin: 30px 0;
         }
+
         .takeaway-box h5 {
             color: #ff4a17;
             font-weight: 700;
@@ -174,8 +237,9 @@
             letter-spacing: 1px;
             margin-bottom: 12px;
         }
+
         .takeaway-box p {
-            color: rgba(255,255,255,0.9) !important;
+            color: rgba(255, 255, 255, 0.9) !important;
             font-size: 1.05rem !important;
             margin-bottom: 0 !important;
         }
@@ -190,12 +254,14 @@
             border-radius: 20px;
             border: 1px solid rgba(255, 255, 255, 0.05);
         }
+
         .final-look-title {
             font-size: 1.75rem;
             font-weight: 700;
             color: #ffffff;
             margin-bottom: 25px;
         }
+
         .btn-live-site {
             background: #ff4a17;
             color: #ffffff !important;
@@ -210,18 +276,35 @@
             text-transform: uppercase;
             letter-spacing: 1px;
         }
+
         .btn-live-site:hover {
             background: #e03a0d;
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(255, 74, 23, 0.6);
         }
-        .btn-live-site i { margin-left: 8px; }
+
+        .btn-live-site i {
+            margin-left: 8px;
+        }
 
         /* Tech Stack */
-        .tech-stack-container h4 { text-align: center; margin-bottom: 25px; color: #fff; text-transform: uppercase; letter-spacing: 2px; font-size: 1rem;}
-        .tech-tags {
-            display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; margin-top: 20px;
+        .tech-stack-container h4 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 1rem;
         }
+
+        .tech-tags {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
         .tech-tag {
             background: rgba(255, 74, 23, 0.15);
             color: #ff4a17;
@@ -255,282 +338,339 @@
 
 <body class="story-page">
 
-<header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-        <a href="index.html" class="logo d-flex align-items-center me-auto">
-            <img src="assets/img/favicon.png" alt="" style="max-height: 50px; margin-right: 10px;">
-            <h1 class="sitename">Jovianne's Portfolio</h1>
-        </a>
+            <a href="index.html" class="logo d-flex align-items-center me-auto">
+                <img src="assets/img/favicon.png" alt="" style="max-height: 50px; margin-right: 10px;">
+                <h1 class="sitename">Jovianne's Portfolio</h1>
+            </a>
 
-        <nav id="navmenu" class="navmenu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#cv-download">Resume</a></li>
-                <li><a href="index.html#resume">Experience & Background</a></li>
-                <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#portfolio">Portfolio</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#cv-download">Resume</a></li>
+                    <li><a href="index.html#resume">Experience & Background</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
 
-        <a class="btn-getstarted" href="index.html#contact">Get Started</a>
+            <a class="btn-getstarted" href="index.html#contact">Get Started</a>
 
-    </div>
-</header>
-
-<main class="main">
-
-    <section class="story-header section">
-        <div class="container" data-aos="fade-up">
-
-            <a href="index.html#portfolio" class="back-arrow-link"><i class="bi bi-arrow-left"></i> Back to Portfolio</a>
-
-            <span class="story-subtitle">AI-Assisted Product Design & Vibe Coding</span>
-            <h1 class="story-title">pAIve: Building a Career Intelligence Dashboard with AI</h1>
-            <div class="story-meta">
-                <i class="bi bi-calendar me-2"></i> 2026 &nbsp;|&nbsp;
-                <i class="bi bi-clock me-2 ms-3"></i> 4 min read &nbsp;|&nbsp;
-                <span class="vibe-badge ms-3"><i class="bi bi-stars"></i> Vibe Coded</span>
-            </div>
-
-            <!-- Banner — replace src with your actual banner image -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="banner-frame">
-                        <!-- TODO: Replace with your pAIve banner image -->
-                        <div class="image-placeholder" style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; border:none; padding:0;">
-                            <div>
-                                <i class="bi bi-image"></i>
-                                <p style="margin:0;">pAIve Dashboard Banner — attach your image here</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row story-content justify-content-center">
-                <div class="col-lg-9">
-
-                    <p>This case study documents how I used <strong>AI-assisted development (Vibe Coding)</strong> to rapidly prototype <strong>pAIve</strong> — a career intelligence platform concept designed to reduce career discovery time by 50%. Rather than spending weeks on wireframes and handoffs, I partnered with AI to go from problem statement to interactive prototype in a single session.</p>
-
-                    <p>The point isn't that AI built it for me. <strong>The point is that I directed it</strong> — shaping the vision, writing the prompts, iterating on the output, and making the creative decisions that turned a blank canvas into a polished product concept.</p>
-
-                    <!-- ==================== STEP 1: THE PROBLEM ==================== -->
-                    <h3>The Process</h3>
-
-                    <div class="process-step" data-aos="fade-up">
-                        <span class="step-number">Step 1 — The Problem</span>
-                        <h4>Career Discovery is Broken</h4>
-                        <p>Professionals looking to pivot careers spend an average of <strong>10+ hours</strong> researching roles, skill gaps, salary benchmarks, and learning paths — scattered across dozens of tabs, job boards, and outdated blog posts. There's no single source of truth.</p>
-                        <p style="margin-top: 15px;">I asked: <em>What if an AI-powered platform could consolidate all of this into a single, personalised dashboard — and cut that research time in half?</em></p>
-
-                        <div class="takeaway-box">
-                            <h5><i class="bi bi-lightbulb me-2"></i> Core Hypothesis</h5>
-                            <p>A well-designed career intelligence dashboard, powered by AI, could reduce career discovery time from 10 hours to under 5 — giving users a clear roadmap instead of information overload.</p>
-                        </div>
-                    </div>
-
-                    <!-- ==================== STEP 2: SKETCHES ==================== -->
-                    <div class="process-step" data-aos="fade-up">
-                        <span class="step-number">Step 2 — Sketches & Ideation</span>
-                        <h4>From Napkin to Wireframe</h4>
-                        <p>Before touching any code or AI tool, I sketched out the core user experience on paper. I needed to answer three questions:</p>
-                        <ul style="color: rgba(255,255,255,0.85); font-size: 1.05rem; line-height: 2;">
-                            <li>What are the <strong>5 most critical data points</strong> a career-switcher needs at a glance?</li>
-                            <li>How should the <strong>information hierarchy</strong> be structured so it doesn't overwhelm?</li>
-                            <li>What layout pattern communicates <strong>trust and professionalism</strong>?</li>
-                        </ul>
-
-                        <p>I landed on a <strong>Bento Grid layout</strong> — inspired by Linear, Stripe, and Perplexity — where each card serves a single purpose: Match Score, Salary Range, Skill Gaps, and a Step-by-Step Roadmap.</p>
-
-                        <!-- TODO: Replace with your actual sketch images -->
-                        <div class="image-placeholder" data-aos="fade-up">
-                            <i class="bi bi-pencil-square"></i>
-                            <p>Your hand-drawn sketches / wireframes go here</p>
-                        </div>
-                    </div>
-
-                    <!-- ==================== STEP 3: AI PROMPTS ==================== -->
-                    <div class="process-step" data-aos="fade-up">
-                        <span class="step-number">Step 3 — AI Prompts (Vibe Coding)</span>
-                        <h4>Directing AI Like a Creative Director</h4>
-                        <p>This is where Vibe Coding comes in. Instead of writing every line of code from scratch, I <strong>authored detailed, structured prompts</strong> that defined the persona, design system, data architecture, and component structure — then let AI generate the implementation while I directed and iterated.</p>
-
-                        <p>Here's the actual prompt structure I used:</p>
-
-                        <div class="ai-prompt-block" data-aos="fade-up">
-                            <div class="prompt-label"><i class="bi bi-robot"></i> Prompt — Persona & Design System</div>
-                            <p class="prompt-text">"Act as a Senior Frontend Architect for a Series A Fintech startup. We are building pAIve, a career coach intelligence platform. The design must be Executive Grade — think Linear, Stripe, or Perplexity. Use the 'Blue Chip Aesthetic': Slate-50 backgrounds, White cards, Blue-600 accents, Inter font with tight tracking, Bento Grid layout with rounded-xl and soft shadows."</p>
-                        </div>
-
-                        <div class="ai-prompt-block" data-aos="fade-up">
-                            <div class="prompt-label"><i class="bi bi-robot"></i> Prompt — Mock Data Architecture</div>
-                            <p class="prompt-text">"Create a strictly typed mock data object called mockCareerData simulating a real API response for a user targeting 'Product Manager'. Include: Match Score: 87%, Time Saved: 4.5 Hours, Skill Gaps: [SQL, API Design, Stakeholder Mgmt], Salary Range: $5,500 – $8,200 SGD."</p>
-                        </div>
-
-                        <div class="ai-prompt-block" data-aos="fade-up">
-                            <div class="prompt-label"><i class="bi bi-robot"></i> Prompt — Component Architecture</div>
-                            <p class="prompt-text">"Generate these components: A minimalist collapsible Sidebar with navigation. A reusable MetricCard for displaying key stats. A RoadmapView as a vertical timeline showing career steps. Use Framer Motion for staggered fade-in animations. Make the search bar feel powerful — large, centered, with an 'Ask AI' button."</p>
-                        </div>
-
-                        <div class="takeaway-box">
-                            <h5><i class="bi bi-stars me-2"></i> Why This Matters</h5>
-                            <p>The quality of AI output is directly proportional to the quality of the human input. Vague prompts produce vague results. By defining the persona, constraints, data model, and design language upfront, I was able to get production-quality output in a fraction of the time — while maintaining full creative control.</p>
-                        </div>
-
-                        <!-- TODO: Replace with screenshots of your prompt/AI interaction -->
-                        <div class="image-placeholder" data-aos="fade-up">
-                            <i class="bi bi-chat-left-dots"></i>
-                            <p>Screenshots of your AI prompt workflow / Cursor IDE go here</p>
-                        </div>
-                    </div>
-
-                    <!-- ==================== STEP 4: FINAL PROTOTYPE ==================== -->
-                    <div class="process-step" data-aos="fade-up">
-                        <span class="step-number">Step 4 — Final Prototype</span>
-                        <h4>The Result: A Production-Ready Dashboard</h4>
-                        <p>The final prototype is a fully interactive React application built with <strong>Vite, Tailwind CSS, Framer Motion, and Recharts</strong>. It renders a complete career intelligence dashboard with:</p>
-
-                        <ul style="color: rgba(255,255,255,0.85); font-size: 1.05rem; line-height: 2;">
-                            <li><strong>4 key metric cards</strong> — Time Saved, Salary Range, Market Demand, Target Role</li>
-                            <li><strong>Animated match score ring</strong> (87%) with SVG draw-in animation</li>
-                            <li><strong>Progress chart</strong> showing match score growth over 8 weeks</li>
-                            <li><strong>Prioritised skill gap analysis</strong> with time estimates and resource counts</li>
-                            <li><strong>5-step career roadmap</strong> as an interactive vertical timeline</li>
-                            <li><strong>Collapsible sidebar</strong> with smooth Framer Motion transitions</li>
-                            <li><strong>AI-powered search bar</strong> with contextual placeholder</li>
-                        </ul>
-
-                        <!-- TODO: Replace with screenshots of the final dashboard -->
-                        <div class="image-placeholder" data-aos="fade-up">
-                            <i class="bi bi-laptop"></i>
-                            <p>Final dashboard screenshot(s) go here</p>
-                        </div>
-                    </div>
-
-                    <!-- ==================== THE LESSON ==================== -->
-                    <h3>The Takeaway</h3>
-                    <p>AI didn't replace me in this project — it <strong>amplified</strong> me. The strategic thinking, the design instinct, the information hierarchy decisions, and the creative direction were all mine. AI handled the repetitive implementation so I could focus on what actually matters: <strong>solving the right problem in the right way.</strong></p>
-
-                    <p>This is what the future of product work looks like. The professionals who thrive won't be the ones who fear AI — they'll be the ones who learn to <strong>conduct</strong> it.</p>
-
-                    <div class="final-look-container">
-                        <h2 class="final-look-title">Want to see the live prototype?</h2>
-                        <p style="color: rgba(255,255,255,0.6); margin-bottom: 25px;">Built in a single session using AI-assisted Vibe Coding.</p>
-                        <!-- TODO: Replace with your actual deployed prototype URL -->
-                        <a href="#" class="btn-live-site">
-                            View Live Demo <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-
-                    <div class="tech-stack-container mt-5 pt-4">
-                        <h4>Tools & Tech Used</h4>
-                        <div class="tech-tags">
-                            <span class="tech-tag">React (Vite)</span>
-                            <span class="tech-tag">Tailwind CSS</span>
-                            <span class="tech-tag">Framer Motion</span>
-                            <span class="tech-tag">Recharts</span>
-                            <span class="tech-tag">Cursor AI</span>
-                            <span class="tech-tag">Vibe Coding</span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
         </div>
-    </section>
+    </header>
 
-    <!-- Explore More Projects -->
-    <section id="portfolio" class="portfolio section" style="background-color: rgba(0,0,0,0.15); border-top: 1px solid rgba(255,255,255,0.05);">
+    <main class="main">
 
-        <div class="container section-title" data-aos="fade-up">
-            <h2>Explore More Projects</h2>
-            <p>See how I apply similar strategies across different domains.</p>
-        </div>
+        <section class="story-header section">
+            <div class="container" data-aos="fade-up">
 
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-            <div class="row gy-4 justify-content-center">
+                <a href="index.html#portfolio" class="back-arrow-link"><i class="bi bi-arrow-left"></i> Back to
+                    Portfolio</a>
 
-                <div class="col-lg-4 col-md-6">
-                    <div class="portfolio-card">
-                        <div class="portfolio-image-container">
-                            <img src="assets/img/portfolio/portfolio-1.jpg" alt="Realign Project" class="img-fluid" loading="lazy">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-info">
-                                    <span class="project-category">Design Experience</span>
-                                    <h4>Interactive Web Platform</h4>
-                                </div>
-                                <div class="portfolio-actions">
-                                    <a href="assets/img/portfolio/portfolio-1.jpg" class="glightbox portfolio-link"><i class="bi bi-plus-lg"></i></a>
-                                    <a href="story-realign.html" class="portfolio-details"><i class="bi bi-arrow-right"></i></a>
-                                </div>
-                            </div>
+                <span class="story-subtitle">AI-Assisted Product Design & Vibe Coding</span>
+                <h1 class="story-title">pAIve: Building a Career Intelligence Dashboard with AI</h1>
+                <div class="story-meta">
+                    <i class="bi bi-calendar me-2"></i> 2026 &nbsp;|&nbsp;
+                    <i class="bi bi-clock me-2 ms-3"></i> 4 min read &nbsp;|&nbsp;
+                    <span class="vibe-badge ms-3"><i class="bi bi-stars"></i> Vibe Coded</span>
+                </div>
+
+                <!-- Banner — replace src with your actual banner image -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="banner-frame">
+                            <!-- TODO: Replace with your pAIve banner image -->
+                            <img src="assets/img/portfolio/paive-banner.png" alt="pAIve Dashboard Banner"
+                                class="banner-image" style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
-                    <div class="portfolio-card">
-                        <div class="portfolio-image-container">
-                            <img src="assets/img/portfolio/portfolio-2.jpg" alt="Digital Project" class="img-fluid" loading="lazy">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-info">
-                                    <span class="project-category">Digital Experience</span>
-                                    <h4>Marketing Campaign</h4>
-                                </div>
-                                <div class="portfolio-actions">
-                                    <a href="assets/img/portfolio/portfolio-2.jpg" class="glightbox portfolio-link"><i class="bi bi-plus-lg"></i></a>
-                                    <a href="story-borderless.html" class="portfolio-details"><i class="bi bi-arrow-right"></i></a>
-                                </div>
+                <div class="row story-content justify-content-center">
+                    <div class="col-lg-9">
+
+                        <p>This case study documents how I used <strong>AI-assisted development (Vibe Coding)</strong>
+                            to rapidly prototype <strong>pAIve</strong> — a career intelligence platform concept
+                            designed to reduce career discovery time by 50%. Rather than spending weeks on wireframes
+                            and handoffs, I partnered with AI to go from problem statement to interactive prototype in a
+                            single session.</p>
+
+                        <p>The point isn't that AI built it for me. <strong>The point is that I directed it</strong> —
+                            shaping the vision, writing the prompts, iterating on the output, and making the creative
+                            decisions that turned a blank canvas into a polished product concept.</p>
+
+                        <!-- ==================== STEP 1: THE PROBLEM ==================== -->
+                        <h3>The Process</h3>
+
+                        <div class="process-step" data-aos="fade-up">
+                            <span class="step-number">Step 1 — The Problem</span>
+                            <h4>Career Discovery is Broken</h4>
+                            <p>Professionals looking to pivot careers spend an average of <strong>10+ hours</strong>
+                                researching roles, skill gaps, salary benchmarks, and learning paths — scattered across
+                                dozens of tabs, job boards, and outdated blog posts. There's no single source of truth.
+                            </p>
+                            <p style="margin-top: 15px;">I asked: <em>What if an AI-powered platform could consolidate
+                                    all of this into a single, personalised dashboard — and cut that research time in
+                                    half?</em></p>
+
+                            <div class="takeaway-box">
+                                <h5><i class="bi bi-lightbulb me-2"></i> Core Hypothesis</h5>
+                                <p>A well-designed career intelligence dashboard, powered by AI, could reduce career
+                                    discovery time from 10 hours to under 5 — giving users a clear roadmap instead of
+                                    information overload.</p>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6">
-                    <div class="portfolio-card">
-                        <div class="portfolio-image-container">
-                            <img src="assets/img/portfolio/portfolio-3.jpg" alt="Strategy Project" class="img-fluid" loading="lazy">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-info">
-                                    <span class="project-category">Creative Design</span>
-                                    <h4>Food Content Creation</h4>
-                                </div>
-                                <div class="portfolio-actions">
-                                    <a href="assets/img/portfolio/portfolio-3.jpg" class="glightbox portfolio-link"><i class="bi bi-plus-lg"></i></a>
-                                    <a href="story-tiktok.html" class="portfolio-details"><i class="bi bi-arrow-right"></i></a>
-                                </div>
+                        <!-- ==================== STEP 2: SKETCHES ==================== -->
+                        <div class="process-step" data-aos="fade-up">
+                            <span class="step-number">Step 2 — Sketches & Ideation</span>
+                            <h4>From Napkin to Wireframe</h4>
+                            <p>Before touching any code or AI tool, I sketched out the core user experience on paper. I
+                                needed to answer three questions:</p>
+                            <ul style="color: rgba(255,255,255,0.85); font-size: 1.05rem; line-height: 2;">
+                                <li>What are the <strong>5 most critical data points</strong> a career-switcher needs at
+                                    a glance?</li>
+                                <li>How should the <strong>information hierarchy</strong> be structured so it doesn't
+                                    overwhelm?</li>
+                                <li>What layout pattern communicates <strong>trust and professionalism</strong>?</li>
+                            </ul>
+
+                            <p>I landed on a <strong>Bento Grid layout</strong> — inspired by Linear, Stripe, and
+                                Perplexity — where each card serves a single purpose: Match Score, Salary Range, Skill
+                                Gaps, and a Step-by-Step Roadmap.</p>
+
+                            <!-- TODO: Replace with your actual sketch images -->
+                            <div class="image-placeholder" data-aos="fade-up">
+                                <i class="bi bi-pencil-square"></i>
+                                <p>Your hand-drawn sketches / wireframes go here</p>
                             </div>
                         </div>
+
+                        <!-- ==================== STEP 3: AI PROMPTS ==================== -->
+                        <div class="process-step" data-aos="fade-up">
+                            <span class="step-number">Step 3 — AI Prompts (Vibe Coding)</span>
+                            <h4>Directing AI Like a Creative Director</h4>
+                            <p>This is where Vibe Coding comes in. Instead of writing every line of code from scratch, I
+                                <strong>authored detailed, structured prompts</strong> that defined the persona, design
+                                system, data architecture, and component structure — then let AI generate the
+                                implementation while I directed and iterated.</p>
+
+                            <p>Here's the actual prompt structure I used:</p>
+
+                            <div class="ai-prompt-block" data-aos="fade-up">
+                                <div class="prompt-label"><i class="bi bi-robot"></i> Prompt — Persona & Design System
+                                </div>
+                                <p class="prompt-text">"Act as a Senior Frontend Architect for a Series A Fintech
+                                    startup. We are building pAIve, a career coach intelligence platform. The design
+                                    must be Executive Grade — think Linear, Stripe, or Perplexity. Use the 'Blue Chip
+                                    Aesthetic': Slate-50 backgrounds, White cards, Blue-600 accents, Inter font with
+                                    tight tracking, Bento Grid layout with rounded-xl and soft shadows."</p>
+                            </div>
+
+                            <div class="ai-prompt-block" data-aos="fade-up">
+                                <div class="prompt-label"><i class="bi bi-robot"></i> Prompt — Mock Data Architecture
+                                </div>
+                                <p class="prompt-text">"Create a strictly typed mock data object called mockCareerData
+                                    simulating a real API response for a user targeting 'Product Manager'. Include:
+                                    Match Score: 87%, Time Saved: 4.5 Hours, Skill Gaps: [SQL, API Design, Stakeholder
+                                    Mgmt], Salary Range: $5,500 – $8,200 SGD."</p>
+                            </div>
+
+                            <div class="ai-prompt-block" data-aos="fade-up">
+                                <div class="prompt-label"><i class="bi bi-robot"></i> Prompt — Component Architecture
+                                </div>
+                                <p class="prompt-text">"Generate these components: A minimalist collapsible Sidebar with
+                                    navigation. A reusable MetricCard for displaying key stats. A RoadmapView as a
+                                    vertical timeline showing career steps. Use Framer Motion for staggered fade-in
+                                    animations. Make the search bar feel powerful — large, centered, with an 'Ask AI'
+                                    button."</p>
+                            </div>
+
+                            <div class="takeaway-box">
+                                <h5><i class="bi bi-stars me-2"></i> Why This Matters</h5>
+                                <p>The quality of AI output is directly proportional to the quality of the human input.
+                                    Vague prompts produce vague results. By defining the persona, constraints, data
+                                    model, and design language upfront, I was able to get production-quality output in a
+                                    fraction of the time — while maintaining full creative control.</p>
+                            </div>
+
+                            <!-- TODO: Replace with screenshots of your prompt/AI interaction -->
+                            <div class="image-placeholder" data-aos="fade-up">
+                                <i class="bi bi-chat-left-dots"></i>
+                                <p>Screenshots of your AI prompt workflow / Cursor IDE go here</p>
+                            </div>
+                        </div>
+
+                        <!-- ==================== STEP 4: FINAL PROTOTYPE ==================== -->
+                        <div class="process-step" data-aos="fade-up">
+                            <span class="step-number">Step 4 — Final Prototype</span>
+                            <h4>The Result: A Production-Ready Dashboard</h4>
+                            <p>The final prototype is a fully interactive React application built with <strong>Vite,
+                                    Tailwind CSS, Framer Motion, and Recharts</strong>. It renders a complete career
+                                intelligence dashboard with:</p>
+
+                            <ul style="color: rgba(255,255,255,0.85); font-size: 1.05rem; line-height: 2;">
+                                <li><strong>4 key metric cards</strong> — Time Saved, Salary Range, Market Demand,
+                                    Target Role</li>
+                                <li><strong>Animated match score ring</strong> (87%) with SVG draw-in animation</li>
+                                <li><strong>Progress chart</strong> showing match score growth over 8 weeks</li>
+                                <li><strong>Prioritised skill gap analysis</strong> with time estimates and resource
+                                    counts</li>
+                                <li><strong>5-step career roadmap</strong> as an interactive vertical timeline</li>
+                                <li><strong>Collapsible sidebar</strong> with smooth Framer Motion transitions</li>
+                                <li><strong>AI-powered search bar</strong> with contextual placeholder</li>
+                            </ul>
+
+                            <!-- TODO: Replace with screenshots of the final dashboard -->
+                            <div class="image-placeholder" data-aos="fade-up">
+                                <i class="bi bi-laptop"></i>
+                                <p>Final dashboard screenshot(s) go here</p>
+                            </div>
+                        </div>
+
+                        <!-- ==================== THE LESSON ==================== -->
+                        <h3>The Takeaway</h3>
+                        <p>AI didn't replace me in this project — it <strong>amplified</strong> me. The strategic
+                            thinking, the design instinct, the information hierarchy decisions, and the creative
+                            direction were all mine. AI handled the repetitive implementation so I could focus on what
+                            actually matters: <strong>solving the right problem in the right way.</strong></p>
+
+                        <p>This is what the future of product work looks like. The professionals who thrive won't be the
+                            ones who fear AI — they'll be the ones who learn to <strong>conduct</strong> it.</p>
+
+                        <div class="final-look-container">
+                            <h2 class="final-look-title">Want to see the live prototype?</h2>
+                            <p style="color: rgba(255,255,255,0.6); margin-bottom: 25px;">Built in a single session
+                                using AI-assisted Vibe Coding.</p>
+                            <!-- TODO: Replace with your actual deployed prototype URL -->
+                            <a href="#" class="btn-live-site">
+                                View Live Demo <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="tech-stack-container mt-5 pt-4">
+                            <h4>Tools & Tech Used</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">React (Vite)</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                                <span class="tech-tag">Framer Motion</span>
+                                <span class="tech-tag">Recharts</span>
+                                <span class="tech-tag">Cursor AI</span>
+                                <span class="tech-tag">Vibe Coding</span>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-
             </div>
+        </section>
+
+        <!-- Explore More Projects -->
+        <section id="portfolio" class="portfolio section"
+            style="background-color: rgba(0,0,0,0.15); border-top: 1px solid rgba(255,255,255,0.05);">
+
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Explore More Projects</h2>
+                <p>See how I apply similar strategies across different domains.</p>
+            </div>
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row gy-4 justify-content-center">
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image-container">
+                                <img src="assets/img/portfolio/portfolio-1.jpg" alt="Realign Project" class="img-fluid"
+                                    loading="lazy">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-info">
+                                        <span class="project-category">Design Experience</span>
+                                        <h4>Interactive Web Platform</h4>
+                                    </div>
+                                    <div class="portfolio-actions">
+                                        <a href="assets/img/portfolio/portfolio-1.jpg"
+                                            class="glightbox portfolio-link"><i class="bi bi-plus-lg"></i></a>
+                                        <a href="story-realign.html" class="portfolio-details"><i
+                                                class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image-container">
+                                <img src="assets/img/portfolio/portfolio-2.jpg" alt="Digital Project" class="img-fluid"
+                                    loading="lazy">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-info">
+                                        <span class="project-category">Digital Experience</span>
+                                        <h4>Marketing Campaign</h4>
+                                    </div>
+                                    <div class="portfolio-actions">
+                                        <a href="assets/img/portfolio/portfolio-2.jpg"
+                                            class="glightbox portfolio-link"><i class="bi bi-plus-lg"></i></a>
+                                        <a href="story-borderless.html" class="portfolio-details"><i
+                                                class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image-container">
+                                <img src="assets/img/portfolio/portfolio-3.jpg" alt="Strategy Project" class="img-fluid"
+                                    loading="lazy">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-info">
+                                        <span class="project-category">Creative Design</span>
+                                        <h4>Food Content Creation</h4>
+                                    </div>
+                                    <div class="portfolio-actions">
+                                        <a href="assets/img/portfolio/portfolio-3.jpg"
+                                            class="glightbox portfolio-link"><i class="bi bi-plus-lg"></i></a>
+                                        <a href="story-tiktok.html" class="portfolio-details"><i
+                                                class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">Jovianne's Portfolio</strong> <span>All Rights
+                    Reserved</span></p>
+            <div class="credits">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
         </div>
-    </section>
+    </footer>
 
-</main>
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
 
-<footer id="footer" class="footer">
-    <div class="container copyright text-center mt-4">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Jovianne's Portfolio</strong> <span>All Rights Reserved</span></p>
-        <div class="credits">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
-    </div>
-</footer>
+    <div id="preloader"></div>
 
-<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-<div id="preloader"></div>
-
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="assets/js/main.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>

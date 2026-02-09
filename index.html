@@ -41,12 +41,17 @@
             --offmenu-glass-border: rgba(255, 255, 255, 0.1);
         }
 
+        /* =====================================================
+           SMOOTH SCROLL BEHAVIOR
+           ===================================================== */
+        html {
+            scroll-behavior: smooth;
+        }
+
         /* --- Base Typography: Inter with tight tracking --- */
         body,
-        .main,
-        .dark-background,
-        section {
-            background: linear-gradient(to bottom, var(--offmenu-green-dark), var(--offmenu-slate)) !important;
+        main {
+            background: linear-gradient(to bottom, #112b22, #0f172a) !important;
             background-attachment: fixed !important;
             color: var(--offmenu-text) !important;
             font-family: 'Inter', system-ui, -apple-system, sans-serif !important;

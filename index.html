@@ -13,7 +13,9 @@
 
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -25,17 +27,30 @@
 
     <style>
         /* Change the background of the whole page */
-        body, .main, .dark-background, section {
-            background-color: #585115 !important; /* Your chosen Green/Brown */
+        body,
+        .main,
+        .dark-background,
+        section {
+            background-color: #585115 !important;
+            /* Your chosen Green/Brown */
             color: #ffffff !important;
         }
+
         /* Fix Link Hover Colors for readability */
-        a { color: #ff4a17; text-decoration: none; transition: 0.3s; }
-        a:hover { color: #fff; }
+        a {
+            color: #ff4a17;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            color: #fff;
+        }
 
         /* --- REDUCE HEADER FONT SIZE --- */
         .sitename {
-            font-size: 1.5rem !important; /* Change 1.5rem to 1.2rem if you want it even smaller */
+            font-size: 1.5rem !important;
+            /* Change 1.5rem to 1.2rem if you want it even smaller */
         }
 
         /* --- SKILLS DASHBOARD STYLES --- */
@@ -79,6 +94,7 @@
             border-radius: 50px;
             margin-top: 10px;
         }
+
         .progress-bar {
             background-color: #ff4a17 !important;
             border-radius: 50px;
@@ -98,13 +114,21 @@
         }
 
         /* Contact Form Styles */
-        .loading, .error-message, .sent-message {
+        .loading,
+        .error-message,
+        .sent-message {
             display: none;
             margin-bottom: 15px;
             font-weight: 600;
         }
-        .loading { color: #ff4a17; }
-        .error-message { color: red; }
+
+        .loading {
+            color: #ff4a17;
+        }
+
+        .error-message {
+            color: red;
+        }
 
         .sent-message {
             color: #ffffff;
@@ -114,7 +138,7 @@
             background: rgba(255, 255, 255, 0.1);
             padding: 15px;
             border-radius: 10px;
-            border: 1px solid rgba(255,255,255,0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         .btn-send {
@@ -127,6 +151,7 @@
             font-weight: 500;
             font-family: "Raleway", sans-serif;
         }
+
         .btn-send:hover {
             background: #e03a0d;
             color: white;
@@ -136,11 +161,13 @@
            EXPERIENCE & BACKGROUND — "Fintech" Redesign
         ====================================================== */
         #resume.resume.section.resume-fintech {
-            background: #585115 !important; /* Original Olive Green */
+            background: #585115 !important;
+            /* Original Olive Green */
             position: relative;
             overflow: hidden;
             font-family: 'Inter', system-ui, -apple-system, sans-serif;
         }
+
         /* No overlay — keep background pure */
 
         #resume.resume-fintech .section-title .subtitle {
@@ -149,10 +176,12 @@
             font-weight: 600;
             letter-spacing: 2px;
         }
+
         #resume.resume-fintech .section-title h2 {
             font-family: 'Raleway', sans-serif;
             color: #ffffff;
         }
+
         #resume.resume-fintech .section-title p {
             color: #94a3b8;
             font-family: 'Inter', sans-serif;
@@ -168,6 +197,7 @@
             margin-bottom: 20px;
             transition: all 0.35s ease;
         }
+
         .glass-card:hover {
             background: rgba(0, 0, 0, 0.32);
             border-color: rgba(255, 255, 255, 0.1);
@@ -181,6 +211,7 @@
             background: rgba(255, 74, 23, 0.06);
             box-shadow: 0 0 25px rgba(255, 74, 23, 0.06);
         }
+
         .glass-card.featured-glow:hover {
             border-color: rgba(255, 74, 23, 0.45);
             box-shadow: 0 0 40px rgba(255, 74, 23, 0.1), 0 12px 40px rgba(0, 0, 0, 0.25);
@@ -193,6 +224,7 @@
             justify-content: space-between;
             margin-bottom: 16px;
         }
+
         .glass-card .card-icon {
             width: 42px;
             height: 42px;
@@ -203,18 +235,22 @@
             font-size: 1.15rem;
             flex-shrink: 0;
         }
+
         .glass-card .card-icon.icon-orange {
             background: rgba(255, 74, 23, 0.15);
             color: #ff4a17;
         }
+
         .glass-card .card-icon.icon-amber {
             background: rgba(245, 158, 11, 0.15);
             color: #fbbf24;
         }
+
         .glass-card .card-icon.icon-emerald {
             background: rgba(16, 185, 129, 0.15);
             color: #34d399;
         }
+
         .glass-card .card-icon.icon-violet {
             background: rgba(139, 92, 246, 0.15);
             color: #a78bfa;
@@ -232,6 +268,7 @@
             color: rgba(255, 255, 255, 0.5);
             border: 1px solid rgba(255, 255, 255, 0.06);
         }
+
         .glass-card.featured-glow .tag-badge {
             background: rgba(255, 74, 23, 0.12);
             color: #ff4a17;
@@ -246,6 +283,7 @@
             margin-bottom: 4px;
             letter-spacing: -0.2px;
         }
+
         .glass-card .company-name {
             font-family: 'Inter', sans-serif;
             font-size: 0.9rem;
@@ -253,6 +291,7 @@
             color: #ff4a17;
             margin-bottom: 4px;
         }
+
         .glass-card .duration {
             font-family: 'Inter', sans-serif;
             font-size: 0.8rem;
@@ -261,6 +300,7 @@
             display: block;
             margin-bottom: 12px;
         }
+
         .glass-card .description {
             font-family: 'Inter', sans-serif;
             font-size: 0.92rem;
@@ -273,15 +313,19 @@
         .resume-fintech .education-section .education-timeline .timeline-track {
             padding-left: 0;
         }
+
         .resume-fintech .education-section .education-timeline .timeline-track::before {
             display: none;
         }
+
         .resume-fintech .education-section .education-timeline .timeline-track .timeline-item {
             margin-bottom: 20px;
         }
+
         .resume-fintech .education-section .education-timeline .timeline-track .timeline-item .timeline-marker {
             display: none;
         }
+
         .resume-fintech .education-section .education-timeline .timeline-track .timeline-item .timeline-content {
             background: rgba(0, 0, 0, 0.25);
             border: 1px solid rgba(255, 255, 255, 0.06);
@@ -289,12 +333,14 @@
             padding: 24px 28px;
             transition: all 0.35s ease;
         }
+
         .resume-fintech .education-section .education-timeline .timeline-track .timeline-item .timeline-content:hover {
             background: rgba(0, 0, 0, 0.32);
             border-color: rgba(255, 255, 255, 0.1);
             transform: translateY(-3px);
             box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
         }
+
         .resume-fintech .timeline-content h4 {
             font-family: 'Inter', sans-serif;
             font-weight: 700;
@@ -302,10 +348,12 @@
             letter-spacing: -0.2px;
             color: #fff;
         }
+
         .resume-fintech .timeline-content .institution {
             font-family: 'Inter', sans-serif;
-            color: rgba(255,255,255,0.5);
+            color: rgba(255, 255, 255, 0.5);
         }
+
         .resume-fintech .education-meta .year-range {
             font-family: 'Inter', sans-serif;
             font-size: 0.8rem !important;
@@ -314,17 +362,20 @@
             padding: 4px 12px !important;
             border-radius: 50px !important;
         }
+
         .resume-fintech .education-meta .degree-level {
             font-family: 'Inter', sans-serif;
             font-size: 0.75rem !important;
-            color: rgba(255,255,255,0.4) !important;
+            color: rgba(255, 255, 255, 0.4) !important;
         }
+
         .resume-fintech .certifications-list .cert-item {
-            border-bottom-color: rgba(255,255,255,0.05) !important;
+            border-bottom-color: rgba(255, 255, 255, 0.05) !important;
         }
+
         .resume-fintech .certifications-list .cert-name {
             font-family: 'Inter', sans-serif;
-            color: rgba(255,255,255,0.75) !important;
+            color: rgba(255, 255, 255, 0.75) !important;
             font-size: 0.88rem !important;
         }
     </style>
@@ -332,871 +383,994 @@
 
 <body class="index-page">
 
-<header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-        <a href="index.html" class="logo d-flex align-items-center me-auto">
-            <img src="assets/img/favicon.png" alt="" style="max-height: 50px; margin-right: 10px;">
-            <h1 class="sitename">Jovianne's Portfolio</h1>
-        </a>
+            <a href="index.html" class="logo d-flex align-items-center me-auto">
+                <img src="assets/img/favicon.png" alt="" style="max-height: 50px; margin-right: 10px;">
+                <h1 class="sitename">Jovianne's Portfolio</h1>
+            </a>
 
-        <nav id="navmenu" class="navmenu">
-            <ul>
-                <li><a href="#hero" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#cv-download">Resume</a></li>
-                <li><a href="#resume">Experience & Background</a>
-                </li> <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="#hero" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#cv-download">Resume</a></li>
+                    <li><a href="#resume">Experience & Background</a>
+                    </li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
 
-        <a class="btn-getstarted" href="#contact">Get Started</a>
+            <a class="btn-getstarted" href="#contact">Get Started</a>
 
-    </div>
-</header>
+        </div>
+    </header>
 
-<main class="main">
+    <main class="main">
 
-    <section id="hero" class="hero section dark-background">
-        <img src="assets/img/profile/background.JPG" alt="" data-aos="fade-in">
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2>Hi, I'm Jovianne Tjiunardi</h2>
-                    <p>I'm a <span class="typed" data-typed-items="Product Analyst, Digital Strategist, Product Designer"></span><span class="typed-cursor" aria-hidden="true"></span></p>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/jovianne-tjiunardi-232835171/"><i class="bi bi-linkedin"></i></a>
+        <section id="hero" class="hero section dark-background">
+            <img src="assets/img/profile/background.JPG" alt="" data-aos="fade-in">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2>Hi, I'm Jovianne Tjiunardi</h2>
+                        <p>I'm a <span class="typed"
+                                data-typed-items="Product Analyst, Digital Strategist, Product Designer"></span><span
+                                class="typed-cursor" aria-hidden="true"></span></p>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/jovianne-tjiunardi-232835171/"><i
+                                    class="bi bi-linkedin"></i></a>
+                            <a href="https://github.com/joviannesocial-arch"><i class="bi bi-github"></i></a>
+                            <a href="mailto:jovianne.tjiunardi7@gmail.com"><i class="bi bi-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about section">
+
+            <div class="container section-title" data-aos="fade-up">
+                <span class="subtitle">My Impact</span>
+                <h2>Bridging Commercial Strategy & Technical Reality</h2>
+                <p>I am a Product Analyst and Digital Designer who moves faster than the average grad. With a double
+                    degree in Business & IT, I don't just document requirements—I build prototypes, query databases, and
+                    validate market fit before development even starts.</p>
+            </div>
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-5 mb-5">
+
+                    <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="150">
+                        <div class="profile-card" id="cv-download">
+                            <div class="profile-header">
+                                <div class="profile-avatar">
+                                    <img src="assets/img/profile/profile-square-3.jpg" class="img-fluid" alt="">
+                                    <div class="status-indicator"></div>
+                                </div>
+                                <h3>Jovianne Tjiunardi</h3>
+                                <span class="role">Product Analyst & Designer</span>
+                            </div>
+
+                            <div class="profile-stats">
+                                <div class="stat-item">
+                                    <h4>5</h4>
+                                    <p>Key Projects</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>3</h4>
+                                    <p>Years Exp.</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>1</h4>
+                                    <p>MVP Shipped</p>
+                                </div>
+                            </div>
+
+                            <div class="profile-actions">
+                                <a href="assets/resume/JovianneTjiunardiCV2026Feb.pdf" class="btn-primary"
+                                    target="_blank">
+                                    <i class="bi bi-download"></i> Download CV
+                                </a>
+                                <a href="#contact" class="btn-secondary"><i class="bi bi-envelope"></i> Contact</a>
+                            </div>
+
+                            <div class="social-connect">
+                                <a href="https://www.linkedin.com/in/jovianne-tjiunardi-232835171/"><i
+                                        class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
+                        <div class="content-wrapper">
+                            <div class="bio-section">
+                                <div class="section-tag">About Me</div>
+                                <h2>From Ambiguity to Deployed Solution</h2>
+                                <p>I operationalise business goals into technical reality. My background isn't just
+                                    theory; it's hands-on execution. From analyzing retail data at Universal Store to
+                                    building AI-powered apps like pAIve, I use data to drive design decisions, proving I
+                                    am an analytical weapon ready to drive real change.</p>
+                            </div>
+
+                            <div class="details-grid">
+                                <div class="detail-item">
+                                    <i class="bi bi-briefcase"></i>
+                                    <div class="detail-content">
+                                        <span>Experience</span>
+                                        <strong>3+ Years</strong>
+                                    </div>
+                                </div>
+
+                                <div class="detail-item">
+                                    <i class="bi bi-mortarboard"></i>
+                                    <div class="detail-content">
+                                        <span>Degree</span>
+                                        <strong>Bachelor of Business & Info Systems</strong>
+                                    </div>
+                                </div>
+
+                                <div class="detail-item">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <div class="detail-content">
+                                        <span>Based In</span>
+                                        <strong>Singapore, open to Relocation</strong>
+                                    </div>
+                                </div>
+
+                                <div class="detail-item">
+                                    <i class="bi bi-envelope"></i>
+                                    <div class="detail-content">
+                                        <span>Email</span>
+                                        <strong>jovianne.tjiunardi7@gmail.com</strong>
+                                    </div>
+                                </div>
+
+                                <div class="detail-item">
+                                    <i class="bi bi-calendar-check"></i>
+                                    <div class="detail-content">
+                                        <span>Availability</span>
+                                        <strong>Open to Work</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row" data-aos="fade-up" data-aos-delay="300">
+                    <div class="col-12">
+                        <div class="skills-card">
+                            <div class="text-center mb-4">
+                                <h3 style="font-weight: 700; color: white;">My Toolkit</h3>
+                                <p style="color: rgba(255,255,255,0.6);">Switch tabs to view my technical vs. personal
+                                    strengths</p>
+
+                                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pills-tech-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-tech" type="button" role="tab">Technical
+                                            Proficiency</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-soft-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-soft" type="button" role="tab">Personal
+                                            Attributes</button>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-content" id="pills-tabContent">
+
+                                <div class="tab-pane fade show active" id="pills-tech" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="skill-item mb-4">
+                                                <div class="skill-info d-flex justify-content-between">
+                                                    <span class="skill-name">Agile Product Management (Jira,
+                                                        Linear)</span>
+                                                    <span class="skill-percent">85%</span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 85%">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item mb-4">
+                                                <div class="skill-info d-flex justify-content-between">
+                                                    <span class="skill-name">AI-Assisted Prototyping (Cursor,
+                                                        React)</span>
+                                                    <span class="skill-percent">90%</span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 90%">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item mb-4">
+                                                <div class="skill-info d-flex justify-content-between">
+                                                    <span class="skill-name">Product Lifecycle Management</span>
+                                                    <span class="skill-percent">85%</span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 85%">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item mb-4">
+                                                <div class="skill-info d-flex justify-content-between">
+                                                    <span class="skill-name">Vibe Coding</span>
+                                                    <span class="skill-percent">95%</span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 95%">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="skill-item mb-4">
+                                                <div class="skill-info d-flex justify-content-between">
+                                                    <span class="skill-name">Interface Design & Wireframing
+                                                        (Figma)</span>
+                                                    <span class="skill-percent">80%</span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 80%">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item mb-4">
+                                                <div class="skill-info d-flex justify-content-between">
+                                                    <span class="skill-name">Data Analytics (SQL, Tableau)</span>
+                                                    <span class="skill-percent">85%</span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 85%">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item mb-4">
+                                                <div class="skill-info d-flex justify-content-between">
+                                                    <span class="skill-name">AI Strategy & Implementation</span>
+                                                    <span class="skill-percent">90%</span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 90%">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="pills-soft" role="tabpanel">
+                                    <div class="d-flex flex-wrap justify-content-center">
+                                        <span class="soft-skill-tag">Stakeholder Management</span>
+                                        <span class="soft-skill-tag">Cross-Functional Communication</span>
+                                        <span class="soft-skill-tag">Creative Problem Solving</span>
+                                        <span class="soft-skill-tag">Adaptability & Resilience</span>
+                                        <span class="soft-skill-tag">Attention to Detail</span>
+                                        <span class="soft-skill-tag">Empathetic Leadership</span>
+                                        <span class="soft-skill-tag">Public Speaking</span>
+                                        <span class="soft-skill-tag">Conflict Resolution</span>
+                                        <span class="soft-skill-tag">Growth Mindset</span>
+                                        <span class="soft-skill-tag">Design Thinking</span>
+                                        <span class="soft-skill-tag">Strategic Prioritisation</span>
+                                        <span class="soft-skill-tag">User Advocacy</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="resume" class="resume section resume-fintech">
+            <div class="container section-title" data-aos="fade-up">
+                <span class="subtitle">My Journey</span>
+                <h2>Experience & Background</h2>
+                <p>A product-minded analyst who bridges business logic with technical execution — from AI prototyping to
+                    stakeholder management.</p>
+            </div>
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row gy-5">
+
+                    <!-- Professional Journey — 65% width -->
+                    <div class="col-lg-8">
+                        <div class="experience-section">
+                            <div class="section-header" data-aos="fade-right" data-aos-delay="200">
+                                <div class="header-content">
+                                    <span class="section-badge">Experience</span>
+                                    <h2>Professional Journey</h2>
+                                </div>
+                            </div>
+
+                            <!-- pAIve — Featured with Glow -->
+                            <div class="glass-card featured-glow" data-aos="fade-up" data-aos-delay="250">
+                                <div class="card-top">
+                                    <div class="card-icon icon-orange">
+                                        <i class="bi bi-cpu"></i>
+                                    </div>
+                                    <span class="tag-badge">Latest Project</span>
+                                </div>
+                                <h3>Product Lead & Developer (Project)</h3>
+                                <p class="company-name">pAIve</p>
+                                <span class="duration">Jan 2026 – Present</span>
+                                <p class="description">Architected an AI-powered career navigation platform reducing
+                                    student research time by ~50%. Orchestrated concept-to-code using React & LLMs.</p>
+                            </div>
+
+                            <!-- Realign Your Life -->
+                            <div class="glass-card" data-aos="fade-up" data-aos-delay="300">
+                                <div class="card-top">
+                                    <div class="card-icon icon-amber">
+                                        <i class="bi bi-briefcase"></i>
+                                    </div>
+                                    <span class="tag-badge">Contract</span>
+                                </div>
+                                <h3>Technical Business Analyst</h3>
+                                <p class="company-name">Realign Your Life</p>
+                                <span class="duration">Jun 2025 – Nov 2025</span>
+                                <p class="description">Translated commercial requirements into technical specs, reducing
+                                    support tickets by 40%. Led UAT and workflow mapping.</p>
+                            </div>
+
+                            <!-- Borderless CS -->
+                            <div class="glass-card" data-aos="fade-up" data-aos-delay="350">
+                                <div class="card-top">
+                                    <div class="card-icon icon-emerald">
+                                        <i class="bi bi-bar-chart-line"></i>
+                                    </div>
+                                    <span class="tag-badge">Internship</span>
+                                </div>
+                                <h3>Data Insights Analyst</h3>
+                                <p class="company-name">Borderless CS</p>
+                                <span class="duration">Jun 2024 – Aug 2024</span>
+                                <p class="description">Built automated Tableau dashboards saving 8 hours/week. Optimized
+                                    onboarding flows via data visualization.</p>
+                            </div>
+
+                            <!-- Freelance Growth -->
+                            <div class="glass-card" data-aos="fade-up" data-aos-delay="400">
+                                <div class="card-top">
+                                    <div class="card-icon icon-violet">
+                                        <i class="bi bi-graph-up-arrow"></i>
+                                    </div>
+                                    <span class="tag-badge">Freelance</span>
+                                </div>
+                                <h3>Algorithmic Growth Strategist</h3>
+                                <p class="company-name">Independent Venture</p>
+                                <span class="duration">Jan 2023 – Dec 2025</span>
+                                <p class="description">Drove 1,000% organic growth via metadata algorithms and A/B
+                                    testing. Shifted strategy to evidence-based production.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Academic Background — 35% width -->
+                    <div class="col-lg-4">
+                        <div class="education-section">
+                            <div class="section-header" data-aos="fade-left" data-aos-delay="200">
+                                <div class="header-content">
+                                    <span class="section-badge">Education</span>
+                                    <h2>Academic Background</h2>
+                                </div>
+                            </div>
+
+                            <div class="education-timeline" data-aos="fade-left" data-aos-delay="300">
+                                <div class="timeline-track">
+                                    <div class="timeline-item">
+                                        <div class="timeline-marker">
+                                            <i class="bi bi-mortarboard-fill"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <div class="education-meta">
+                                                <span class="year-range">2021 – 2025</span>
+                                                <span class="degree-level">Bachelor</span>
+                                            </div>
+                                            <h4>Bachelor of Business Studies & Bachelor of Business Information Systems
+                                            </h4>
+                                            <p class="institution">Monash University</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-marker">
+                                            <i class="bi bi-patch-check-fill"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <div class="education-meta">
+                                                <span class="year-range">2025</span>
+                                                <span class="degree-level">Certificates</span>
+                                            </div>
+                                            <h4>Professional Certifications</h4>
+                                            <div class="certifications-list">
+                                                <div class="cert-item"><span class="cert-name">Google Ads
+                                                        Certifications</span></div>
+                                                <div class="cert-item"><span class="cert-name">Google Analytics
+                                                        Individual Qualification</span></div>
+                                                <div class="cert-item"><span class="cert-name">SEO Certification</span>
+                                                </div>
+                                                <div class="cert-item"><span class="cert-name">Social Media
+                                                        Certification</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services section">
+
+            <div class="container section-title" data-aos="fade-up">
+                <span class="subtitle">My Services</span>
+                <h2>What I Offer</h2>
+            </div>
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="service-item featured">
+                            <div class="featured-tag">Core Skill</div>
+                            <div class="icon-wrapper"><i class="bi bi-compass"></i></div>
+                            <h4>Product Strategy</h4>
+                            <p>Defining product roadmaps, MVP feature prioritization, and assessing product-market fit
+                                for digital solutions.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="service-item">
+                            <div class="icon-wrapper"><i class="bi bi-search"></i></div>
+                            <h4>Technical Business Analysis</h4>
+                            <p>Translating ambiguous commercial needs into clear technical specifications (User Stories,
+                                Jira) to bridge the gap between business and engineering.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="service-item">
+                            <div class="icon-wrapper"><i class="bi bi-cpu"></i></div>
+                            <h4>AI-Assisted Prototyping</h4>
+                            <p>Leveraging LLMs to accelerate the 'Concept-to-Code' cycle, delivering functional React
+                                MVPs 50% faster than traditional workflows.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="service-item">
+                            <div class="icon-wrapper"><i class="bi bi-bar-chart-line"></i></div>
+                            <h4>Data Visualisation</h4>
+                            <p>Turning complex raw data (SQL, Excel) into clear Tableau dashboards that stakeholders can
+                                actually use for decision-making.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
+                        <div class="service-item">
+                            <div class="icon-wrapper"><i class="bi bi-kanban"></i></div>
+                            <h4>Agile Delivery</h4>
+                            <p>Streamlining development workflows using Jira/Linear and managing sprint timelines to
+                                ensure on-time delivery.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
+                        <div class="service-item">
+                            <div class="icon-wrapper"><i class="bi bi-graph-up-arrow"></i></div>
+                            <h4>Growth Analytics</h4>
+                            <p>Replacing 'gut feeling' with data — analyzing retention metrics, user acquisition costs,
+                                and conversion funnels to drive growth.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+                        <div class="cta-box">
+                            <div class="row align-items-center">
+                                <div class="col-lg-8">
+                                    <h3>Interested in a partnership?</h3>
+                                    <p>I'd love to know more about you as well, reach out to me if you think we would
+                                        have a good conversation!</p>
+                                </div>
+                                <div class="col-lg-4 text-lg-end text-center">
+                                    <a href="#contact" class="cta-btn">Your New Hire</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="portfolio" class="portfolio section">
+
+            <div class="container section-title" data-aos="fade-up">
+                <span class="subtitle">Portfolio</span>
+                <h2>View My Collection of Works</h2>
+                <p>Explore a selection of projects where I translate complex business goals into tangible digital
+                    solutions.</p>
+            </div>
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+                    <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+                        <li data-filter="*" class="filter-active">All Work</li>
+                        <li data-filter=".filter-creative">Creative</li>
+                        <li data-filter=".filter-digital">Digital</li>
+                        <li data-filter=".filter-strategy">Strategy</li>
+                        <li data-filter=".filter-development">Development</li>
+                    </ul>
+
+                    <div class="row gy-4 isotope-container justify-content-center" data-aos="fade-up"
+                        data-aos-delay="300">
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-creative">
+                            <div class="portfolio-card">
+                                <div class="portfolio-image-container">
+                                    <img src="assets/img/portfolio/portfolio-1.jpg" alt="Creative Project"
+                                        class="img-fluid" loading="lazy">
+                                    <div class="portfolio-overlay">
+                                        <div class="portfolio-info">
+                                            <span class="project-category">Design Experience</span>
+                                            <h4>Interactive Web Platform</h4>
+                                        </div>
+                                        <div class="portfolio-actions">
+                                            <a href="assets/img/portfolio/portfolio-1.jpg"
+                                                class="glightbox portfolio-link">
+                                                <i class="bi bi-plus-lg"></i>
+                                            </a>
+                                            <a href="story-realign.html" class="portfolio-details"
+                                                title="Read the Story">
+                                                <i class="bi bi-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-meta">
+                                    <div class="project-tags">
+                                        <span class="tag">Web Design</span>
+                                        <span class="tag">Agile Development</span>
+                                        <span class="tag">Mobile</span>
+                                        <span class="tag">UI/UX</span>
+                                    </div>
+                                    <div class="project-year">2025</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-digital">
+                            <div class="portfolio-card">
+                                <div class="portfolio-image-container">
+                                    <img src="assets/img/portfolio/portfolio-2.jpg" alt="Digital Project"
+                                        class="img-fluid" loading="lazy">
+                                    <div class="portfolio-overlay">
+                                        <div class="portfolio-info">
+                                            <span class="project-category">Digital Experience</span>
+                                            <h4>Marketing Campaign</h4>
+                                        </div>
+                                        <div class="portfolio-actions">
+                                            <a href="assets/img/portfolio/portfolio-2.jpg"
+                                                class="glightbox portfolio-link">
+                                                <i class="bi bi-plus-lg"></i>
+                                            </a>
+                                            <a href="story-borderless.html" class="portfolio-details"
+                                                title="Read the Story">
+                                                <i class="bi bi-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-meta">
+                                    <div class="project-tags">
+                                        <span class="tag">Newsletter Design</span>
+                                        <span class="tag">Campaign</span>
+                                    </div>
+                                    <div class="project-year">2024</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+                            <div class="portfolio-card">
+                                <div class="portfolio-image-container">
+                                    <img src="assets/img/portfolio/portfolio-3.jpg" alt="Strategy Project"
+                                        class="img-fluid" loading="lazy">
+                                    <div class="portfolio-overlay">
+                                        <div class="portfolio-info">
+                                            <span class="project-category">Creative Design</span>
+                                            <h4>Food Content Creation</h4>
+                                        </div>
+                                        <div class="portfolio-actions">
+                                            <a href="assets/img/portfolio/portfolio-3.jpg"
+                                                class="glightbox portfolio-link">
+                                                <i class="bi bi-plus-lg"></i>
+                                            </a>
+                                            <a href="story-tiktok.html" class="portfolio-details"
+                                                title="Read the Story">
+                                                <i class="bi bi-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-meta">
+                                    <div class="project-tags">
+                                        <span class="tag">Creative</span>
+                                        <span class="tag">Branding</span>
+                                        <span class="tag">Strategy</span>
+                                        <span class="tag">Content Creating</span>
+                                    </div>
+                                    <div class="project-year">2023</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
+                            <div class="portfolio-card">
+                                <div class="portfolio-image-container">
+                                    <img src="assets/img/portfolio/portfolio-4.jpg" alt="Development Project"
+                                        class="img-fluid" loading="lazy">
+                                    <div class="portfolio-overlay">
+                                        <div class="portfolio-info">
+                                            <span class="project-category">Branding Strategy</span>
+                                            <h4>Personal Portfolio</h4>
+                                        </div>
+                                        <div class="portfolio-actions">
+                                            <a href="assets/img/portfolio/portfolio-4.jpg"
+                                                class="glightbox portfolio-link">
+                                                <i class="bi bi-plus-lg"></i>
+                                            </a>
+                                            <a href="story-canva.html" class="portfolio-details" title="Read the Story">
+                                                <i class="bi bi-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-meta">
+                                    <div class="project-tags">
+                                        <span class="tag">Branding</span>
+                                        <span class="tag">Identity</span>
+                                        <span class="tag">Creative</span>
+                                    </div>
+                                    <div class="project-year">2024</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-development filter-strategy">
+                            <div class="portfolio-card">
+                                <div class="portfolio-image-container">
+                                    <img src="assets/img/portfolio/portfolio-paive.png" alt="pAIve AI Project"
+                                        class="img-fluid" loading="lazy">
+                                    <div class="portfolio-overlay">
+                                        <div class="portfolio-info">
+                                            <span class="project-category">AI-Assisted Development</span>
+                                            <h4>pAIve Career Dashboard</h4>
+                                        </div>
+                                        <div class="portfolio-actions">
+                                            <a href="assets/img/portfolio/portfolio-paive.png"
+                                                class="glightbox portfolio-link">
+                                                <i class="bi bi-plus-lg"></i>
+                                            </a>
+                                            <a href="story-paive.html" class="portfolio-details" title="Read the Story">
+                                                <i class="bi bi-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-meta">
+                                    <div class="project-tags">
+                                        <span class="tag">Vibe Coding</span>
+                                        <span class="tag">AI</span>
+                                        <span class="tag">Product Design</span>
+                                        <span class="tag">React</span>
+                                    </div>
+                                    <div class="project-year">2026</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-bottom" data-aos="fade-up" data-aos-delay="400">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8">
+                                <h3>Like what you see?</h3>
+                                <p>If you think I could be a good fit for your company, I would love to hear from you!
+                                    :)</p>
+                            </div>
+                            <div class="col-lg-4 text-lg-end">
+                                <a href="#contact" class="btn btn-accent">Let's Work Together</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+        </section>
+
+        <section id="contact" class="contact section">
+
+            <style>
+                /* 1. Hide status messages by default */
+                .loading,
+                .error-message,
+                .sent-message {
+                    display: none;
+                    margin-bottom: 15px;
+                    font-weight: 600;
+                }
+
+                .loading {
+                    color: #ff4a17;
+                }
+
+                .error-message {
+                    color: red;
+                }
+
+                /* --- UPDATED SENT MESSAGE STYLE --- */
+                .sent-message {
+                    color: #ffffff;
+                    /* Changed from green to White */
+                    font-family: "Raleway", sans-serif;
+                    /* Changed to personable font */
+                    font-size: 1.1rem;
+                    text-align: center;
+                    background: rgba(255, 255, 255, 0.1);
+                    padding: 15px;
+                    border-radius: 10px;
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                }
+
+                /* 2. Match 'Get Started' Button Style */
+                .btn-send {
+                    background: #ff4a17;
+                    color: white;
+                    padding: 12px 35px;
+                    /* Slightly larger for touch targets */
+                    border-radius: 50px;
+                    border: none;
+                    /* Removes default button border */
+                    transition: 0.3s;
+                    font-weight: 500;
+                    font-family: "Raleway", sans-serif;
+                }
+
+                .btn-send:hover {
+                    background: #e03a0d;
+                    /* Darker orange on hover */
+                    color: white;
+                }
+            </style>
+
+            <div class="container section-title" data-aos="fade-up">
+                <span class="subtitle">Contact</span>
+                <h2>Reaching Out</h2>
+                <p>I look forward to hearing from you!</p>
+            </div>
+
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-4">
+                        <div class="info-item">
+                            <div class="icon-wrapper">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+                            <div>
+                                <h3>Location</h3>
+                                <p>Singapore based, open to travel overseas</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="icon-wrapper">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            <div>
+                                <h3>Email Me</h3>
+                                <p>jovianne.tjiunardi7@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <form id="contact-form" action="https://formspree.io/f/movgnypp" method="post" role="form">
+                            <div class="row gy-4">
+
+                                <div class="col-md-6">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name"
+                                        required>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" name="email" placeholder="Your Email"
+                                        required>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" name="subject" placeholder="Subject"
+                                        required>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <textarea class="form-control" name="message" rows="6" placeholder="Message"
+                                        required></textarea>
+                                </div>
+
+                                <div class="col-md-12 text-center">
+                                    <div class="loading">Loading...</div>
+                                    <div class="error-message"></div>
+                                    <div class="sent-message">I've received your message and will aim to respond to you
+                                        within a day, thank you!</div>
+
+                                    <button type="submit" class="btn-send">Send Message</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <script>
+                var form = document.getElementById("contact-form");
+
+                async function handleSubmit(event) {
+                    event.preventDefault();
+                    var status = document.querySelector(".sent-message");
+                    var loading = document.querySelector(".loading");
+                    var error = document.querySelector(".error-message");
+                    var button = document.querySelector(".btn-send");
+                    var data = new FormData(event.target);
+
+                    // UI State: Loading
+                    loading.style.display = "block";
+                    error.style.display = "none";
+                    status.style.display = "none";
+                    button.style.display = "none"; // Hide button so they don't click twice
+
+                    fetch(event.target.action, {
+                        method: form.method,
+                        body: data,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    }).then(response => {
+                        loading.style.display = "none"; // Hide loading
+                        if (response.ok) {
+                            status.style.display = "block"; // Show Success
+                            form.reset(); // Clear the form
+                        } else {
+                            response.json().then(data => {
+                                if (Object.hasOwn(data, 'errors')) {
+                                    error.innerHTML = data["errors"].map(error => error["message"]).join(", ");
+                                } else {
+                                    error.innerHTML = "Oops! There was a problem submitting your form";
+                                }
+                                error.style.display = "block";
+                                button.style.display = "inline-block"; // Show button again to retry
+                            })
+                        }
+                    }).catch(error => {
+                        loading.style.display = "none";
+                        error.innerHTML = "Oops! There was a problem submitting your form";
+                        error.style.display = "block";
+                        button.style.display = "inline-block";
+                    });
+                }
+                form.addEventListener("submit", handleSubmit);
+            </script>
+
+        </section>
+
+    </main>
+
+    <footer id="footer" class="footer">
+
+        <div class="container footer-top">
+            <div class="row gy-4">
+
+                <div class="col-lg-5 col-md-12 footer-about">
+                    <a href="index.html" class="logo d-flex align-items-center">
+                        <span class="sitename">Jovianne's Portfolio</span>
+                    </a>
+                    <p class="mt-3"><strong>Bridging the gap between creative vision and technical execution.</strong>
+                    </p>
+                    <p>I act as a translator between stakeholders and developers, turning abstract market trends into
+                        data-driven business logic. My goal is simple: to ensure digital products aren't just launched,
+                        but engineered for growth.</p>
+                    <div class="social-links d-flex mt-4">
+                        <a href="https://www.linkedin.com/in/jovianne-tjiunardi-232835171/"><i
+                                class="bi bi-linkedin"></i></a>
                         <a href="https://github.com/joviannesocial-arch"><i class="bi bi-github"></i></a>
                         <a href="mailto:jovianne.tjiunardi7@gmail.com"><i class="bi bi-envelope"></i></a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="about" class="about section">
-
-        <div class="container section-title" data-aos="fade-up">
-            <span class="subtitle">My Impact</span>
-            <h2>Bridging Commercial Strategy & Technical Reality</h2>
-            <p>I am a Product Analyst and Digital Designer who moves faster than the average grad. With a double degree in Business & IT, I don't just document requirements—I build prototypes, query databases, and validate market fit before development even starts.</p>
-        </div>
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="row gy-5 mb-5">
-
-                <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="150">
-                    <div class="profile-card" id="cv-download">
-                        <div class="profile-header">
-                            <div class="profile-avatar">
-                                <img src="assets/img/profile/profile-square-3.jpg" class="img-fluid" alt="">
-                                <div class="status-indicator"></div>
-                            </div>
-                            <h3>Jovianne Tjiunardi</h3>
-                            <span class="role">Product Analyst & Designer</span>
-                        </div>
-
-                        <div class="profile-stats">
-                            <div class="stat-item">
-                                <h4>5</h4>
-                                <p>Key Projects</p>
-                            </div>
-                            <div class="stat-item">
-                                <h4>3</h4>
-                                <p>Years Exp.</p>
-                            </div>
-                            <div class="stat-item">
-                                <h4>1</h4>
-                                <p>MVP Shipped</p>
-                            </div>
-                        </div>
-
-                        <div class="profile-actions">
-                            <a href="assets/resume/JovianneTjiunardiCV2026Feb.pdf" class="btn-primary" target="_blank">
-                                <i class="bi bi-download"></i> Download CV
-                            </a>
-                            <a href="#contact" class="btn-secondary"><i class="bi bi-envelope"></i> Contact</a>
-                        </div>
-
-                        <div class="social-connect">
-                            <a href="https://www.linkedin.com/in/jovianne-tjiunardi-232835171/"><i class="bi bi-linkedin"></i></a>
-                        </div>
-                    </div>
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#cv-download">Resume</a></li>
+                        <li><a href="#resume">Experience & Background</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </div>
 
-                <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
-                    <div class="content-wrapper">
-                        <div class="bio-section">
-                            <div class="section-tag">About Me</div>
-                            <h2>From Ambiguity to Deployed Solution</h2>
-                            <p>I operationalise business goals into technical reality. My background isn't just theory; it's hands-on execution. From analyzing retail data at Universal Store to building AI-powered apps like pAIve, I use data to drive design decisions, proving I am an analytical weapon ready to drive real change.</p>
-                        </div>
-
-                        <div class="details-grid">
-                            <div class="detail-item">
-                                <i class="bi bi-briefcase"></i>
-                                <div class="detail-content">
-                                    <span>Experience</span>
-                                    <strong>3+ Years</strong>
-                                </div>
-                            </div>
-
-                            <div class="detail-item">
-                                <i class="bi bi-mortarboard"></i>
-                                <div class="detail-content">
-                                    <span>Degree</span>
-                                    <strong>Bachelor of Business & Info Systems</strong>
-                                </div>
-                            </div>
-
-                            <div class="detail-item">
-                                <i class="bi bi-geo-alt"></i>
-                                <div class="detail-content">
-                                    <span>Based In</span>
-                                    <strong>Singapore, open to travel overseas</strong>
-                                </div>
-                            </div>
-
-                            <div class="detail-item">
-                                <i class="bi bi-envelope"></i>
-                                <div class="detail-content">
-                                    <span>Email</span>
-                                    <strong>jovianne.tjiunardi7@gmail.com</strong>
-                                </div>
-                            </div>
-
-                            <div class="detail-item">
-                                <i class="bi bi-calendar-check"></i>
-                                <div class="detail-content">
-                                    <span>Availability</span>
-                                    <strong>Open to Work</strong>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div> <div class="row" data-aos="fade-up" data-aos-delay="300">
-            <div class="col-12">
-                <div class="skills-card">
-                    <div class="text-center mb-4">
-                        <h3 style="font-weight: 700; color: white;">My Toolkit</h3>
-                        <p style="color: rgba(255,255,255,0.6);">Switch tabs to view my technical vs. personal strengths</p>
-
-                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="pills-tech-tab" data-bs-toggle="pill" data-bs-target="#pills-tech" type="button" role="tab">Technical Proficiency</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-soft-tab" data-bs-toggle="pill" data-bs-target="#pills-soft" type="button" role="tab">Personal Attributes</button>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-content" id="pills-tabContent">
-
-                        <div class="tab-pane fade show active" id="pills-tech" role="tabpanel">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="skill-item mb-4">
-                                        <div class="skill-info d-flex justify-content-between">
-                                            <span class="skill-name">Agile Product Management (Jira, Linear)</span>
-                                            <span class="skill-percent">85%</span>
-                                        </div>
-                                        <div class="progress"><div class="progress-bar" role="progressbar" style="width: 85%"></div></div>
-                                    </div>
-                                    <div class="skill-item mb-4">
-                                        <div class="skill-info d-flex justify-content-between">
-                                            <span class="skill-name">AI-Assisted Prototyping (Cursor, React)</span>
-                                            <span class="skill-percent">90%</span>
-                                        </div>
-                                        <div class="progress"><div class="progress-bar" role="progressbar" style="width: 90%"></div></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="skill-item mb-4">
-                                        <div class="skill-info d-flex justify-content-between">
-                                            <span class="skill-name">Interface Design & Wireframing (Figma)</span>
-                                            <span class="skill-percent">80%</span>
-                                        </div>
-                                        <div class="progress"><div class="progress-bar" role="progressbar" style="width: 80%"></div></div>
-                                    </div>
-                                    <div class="skill-item mb-4">
-                                        <div class="skill-info d-flex justify-content-between">
-                                            <span class="skill-name">Data Analytics (SQL, Tableau)</span>
-                                            <span class="skill-percent">85%</span>
-                                        </div>
-                                        <div class="progress"><div class="progress-bar" role="progressbar" style="width: 85%"></div></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane fade" id="pills-soft" role="tabpanel">
-                            <div class="d-flex flex-wrap justify-content-center">
-                                <span class="soft-skill-tag">Stakeholder Management</span>
-                                <span class="soft-skill-tag">Cross-Functional Communication</span>
-                                <span class="soft-skill-tag">Creative Problem Solving</span>
-                                <span class="soft-skill-tag">Adaptability & Resilience</span>
-                                <span class="soft-skill-tag">Attention to Detail</span>
-                                <span class="soft-skill-tag">Empathetic Leadership</span>
-                                <span class="soft-skill-tag">Public Speaking</span>
-                                <span class="soft-skill-tag">Conflict Resolution</span>
-                                <span class="soft-skill-tag">Growth Mindset</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        </div>
-
-    </section>
-
-    <section id="resume" class="resume section resume-fintech">
-        <div class="container section-title" data-aos="fade-up">
-            <span class="subtitle">My Journey</span>
-            <h2>Experience & Background</h2>
-            <p>A product-minded analyst who bridges business logic with technical execution — from AI prototyping to stakeholder management.</p>
-        </div>
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-            <div class="row gy-5">
-
-                <!-- Professional Journey — 65% width -->
-                <div class="col-lg-8">
-                    <div class="experience-section">
-                        <div class="section-header" data-aos="fade-right" data-aos-delay="200">
-                            <div class="header-content">
-                                <span class="section-badge">Experience</span>
-                                <h2>Professional Journey</h2>
-                            </div>
-                        </div>
-
-                        <!-- pAIve — Featured with Glow -->
-                        <div class="glass-card featured-glow" data-aos="fade-up" data-aos-delay="250">
-                            <div class="card-top">
-                                <div class="card-icon icon-orange">
-                                    <i class="bi bi-cpu"></i>
-                                </div>
-                                <span class="tag-badge">Latest Project</span>
-                            </div>
-                            <h3>Product Lead & Developer (Project)</h3>
-                            <p class="company-name">pAIve</p>
-                            <span class="duration">Jan 2026 – Present</span>
-                            <p class="description">Architected an AI-powered career navigation platform reducing student research time by ~50%. Orchestrated concept-to-code using React & LLMs.</p>
-                        </div>
-
-                        <!-- Realign Your Life -->
-                        <div class="glass-card" data-aos="fade-up" data-aos-delay="300">
-                            <div class="card-top">
-                                <div class="card-icon icon-amber">
-                                    <i class="bi bi-briefcase"></i>
-                                </div>
-                                <span class="tag-badge">Contract</span>
-                            </div>
-                            <h3>Technical Business Analyst</h3>
-                            <p class="company-name">Realign Your Life</p>
-                            <span class="duration">Jun 2025 – Nov 2025</span>
-                            <p class="description">Translated commercial requirements into technical specs, reducing support tickets by 40%. Led UAT and workflow mapping.</p>
-                        </div>
-
-                        <!-- Borderless CS -->
-                        <div class="glass-card" data-aos="fade-up" data-aos-delay="350">
-                            <div class="card-top">
-                                <div class="card-icon icon-emerald">
-                                    <i class="bi bi-bar-chart-line"></i>
-                                </div>
-                                <span class="tag-badge">Internship</span>
-                            </div>
-                            <h3>Data Insights Analyst</h3>
-                            <p class="company-name">Borderless CS</p>
-                            <span class="duration">Jun 2024 – Aug 2024</span>
-                            <p class="description">Built automated Tableau dashboards saving 8 hours/week. Optimized onboarding flows via data visualization.</p>
-                        </div>
-
-                        <!-- Freelance Growth -->
-                        <div class="glass-card" data-aos="fade-up" data-aos-delay="400">
-                            <div class="card-top">
-                                <div class="card-icon icon-violet">
-                                    <i class="bi bi-graph-up-arrow"></i>
-                                </div>
-                                <span class="tag-badge">Freelance</span>
-                            </div>
-                            <h3>Algorithmic Growth Strategist</h3>
-                            <p class="company-name">Independent Venture</p>
-                            <span class="duration">Jan 2023 – Dec 2025</span>
-                            <p class="description">Drove 1,000% organic growth via metadata algorithms and A/B testing. Shifted strategy to evidence-based production.</p>
-                        </div>
-
-                    </div>
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4>Core Expertise</h4>
+                    <ul>
+                        <li><a href="#services">Business Analysis</a></li>
+                        <li><a href="#services">Content Strategy</a></li>
+                        <li><a href="#services">Agile Management</a></li>
+                        <li><a href="#services">UI/UX Design</a></li>
+                        <li><a href="#services">Data Visualisation</a></li>
+                    </ul>
                 </div>
 
-                <!-- Academic Background — 35% width -->
-                <div class="col-lg-4">
-                    <div class="education-section">
-                        <div class="section-header" data-aos="fade-left" data-aos-delay="200">
-                            <div class="header-content">
-                                <span class="section-badge">Education</span>
-                                <h2>Academic Background</h2>
-                            </div>
-                        </div>
-
-                        <div class="education-timeline" data-aos="fade-left" data-aos-delay="300">
-                            <div class="timeline-track">
-                                <div class="timeline-item">
-                                    <div class="timeline-marker">
-                                        <i class="bi bi-mortarboard-fill"></i>
-                                    </div>
-                                    <div class="timeline-content">
-                                        <div class="education-meta">
-                                            <span class="year-range">2021 – 2025</span>
-                                            <span class="degree-level">Bachelor</span>
-                                        </div>
-                                        <h4>Bachelor of Business Studies & Bachelor of Business Information Systems</h4>
-                                        <p class="institution">Monash University</p>
-                                    </div>
-                                </div>
-
-                                <div class="timeline-item">
-                                    <div class="timeline-marker">
-                                        <i class="bi bi-patch-check-fill"></i>
-                                    </div>
-                                    <div class="timeline-content">
-                                        <div class="education-meta">
-                                            <span class="year-range">2025</span>
-                                            <span class="degree-level">Certificates</span>
-                                        </div>
-                                        <h4>Professional Certifications</h4>
-                                        <div class="certifications-list">
-                                            <div class="cert-item"><span class="cert-name">Google Ads Certifications</span></div>
-                                            <div class="cert-item"><span class="cert-name">Google Analytics Individual Qualification</span></div>
-                                            <div class="cert-item"><span class="cert-name">SEO Certification</span></div>
-                                            <div class="cert-item"><span class="cert-name">Social Media Certification</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                    <h4>Contact Me</h4>
+                    <p><strong>Email:</strong> <span>jovianne.tjiunardi7@gmail.com</span></p>
+                    <p>Based in Singapore</p>
                 </div>
 
             </div>
         </div>
-    </section>
 
-    <section id="services" class="services section">
-
-        <div class="container section-title" data-aos="fade-up">
-            <span class="subtitle">My Services</span>
-            <h2>What I Offer</h2>
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">Craftivo</strong> <span>All Rights Reserved</span>
+            </p>
+            <div class="credits">
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
         </div>
 
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
+    </footer>
 
-            <div class="row gy-4">
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
 
-                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="service-item featured">
-                        <div class="featured-tag">Core Skill</div>
-                        <div class="icon-wrapper"><i class="bi bi-compass"></i></div>
-                        <h4>Product Strategy</h4>
-                        <p>Defining product roadmaps, MVP feature prioritization, and assessing product-market fit for digital solutions.</p>
-                    </div>
-                </div>
+    <div id="preloader"></div>
 
-                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="service-item">
-                        <div class="icon-wrapper"><i class="bi bi-search"></i></div>
-                        <h4>Technical Business Analysis</h4>
-                        <p>Translating ambiguous commercial needs into clear technical specifications (User Stories, Jira) to bridge the gap between business and engineering.</p>
-                    </div>
-                </div>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="service-item">
-                        <div class="icon-wrapper"><i class="bi bi-cpu"></i></div>
-                        <h4>AI-Assisted Prototyping</h4>
-                        <p>Leveraging LLMs to accelerate the 'Concept-to-Code' cycle, delivering functional React MVPs 50% faster than traditional workflows.</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="service-item">
-                        <div class="icon-wrapper"><i class="bi bi-bar-chart-line"></i></div>
-                        <h4>Data Visualisation</h4>
-                        <p>Turning complex raw data (SQL, Excel) into clear Tableau dashboards that stakeholders can actually use for decision-making.</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
-                    <div class="service-item">
-                        <div class="icon-wrapper"><i class="bi bi-kanban"></i></div>
-                        <h4>Agile Delivery</h4>
-                        <p>Streamlining development workflows using Jira/Linear and managing sprint timelines to ensure on-time delivery.</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
-                    <div class="service-item">
-                        <div class="icon-wrapper"><i class="bi bi-graph-up-arrow"></i></div>
-                        <h4>Growth Analytics</h4>
-                        <p>Replacing 'gut feeling' with data — analyzing retention metrics, user acquisition costs, and conversion funnels to drive growth.</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row mt-5">
-                <div class="col-12" data-aos="fade-up" data-aos-delay="200">
-                    <div class="cta-box">
-                        <div class="row align-items-center">
-                            <div class="col-lg-8">
-                                <h3>Interested in a partnership?</h3>
-                                <p>I'd love to know more about you as well, reach out to me if you think we would have a good conversation!</p>
-                            </div>
-                            <div class="col-lg-4 text-lg-end text-center">
-                                <a href="#contact" class="cta-btn">Your New Hire</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section id="portfolio" class="portfolio section">
-
-        <div class="container section-title" data-aos="fade-up">
-            <span class="subtitle">Portfolio</span>
-            <h2>View My Collection of Works</h2>
-            <p>Explore a selection of projects where I translate complex business goals into tangible digital solutions.</p>
-        </div>
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-                <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
-                    <li data-filter="*" class="filter-active">All Work</li>
-                    <li data-filter=".filter-creative">Creative</li>
-                    <li data-filter=".filter-digital">Digital</li>
-                    <li data-filter=".filter-strategy">Strategy</li>
-                    <li data-filter=".filter-development">Development</li>
-                </ul>
-
-                <div class="row gy-4 isotope-container justify-content-center" data-aos="fade-up" data-aos-delay="300">
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-creative">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image-container">
-                                <img src="assets/img/portfolio/portfolio-1.jpg" alt="Creative Project" class="img-fluid" loading="lazy">
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-info">
-                                        <span class="project-category">Design Experience</span>
-                                        <h4>Interactive Web Platform</h4>
-                                    </div>
-                                    <div class="portfolio-actions">
-                                        <a href="assets/img/portfolio/portfolio-1.jpg" class="glightbox portfolio-link">
-                                            <i class="bi bi-plus-lg"></i>
-                                        </a>
-                                        <a href="story-realign.html" class="portfolio-details" title="Read the Story">
-                                            <i class="bi bi-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-meta">
-                                <div class="project-tags">
-                                    <span class="tag">Web Design</span>
-                                    <span class="tag">Agile Development</span>
-                                    <span class="tag">Mobile</span>
-                                    <span class="tag">UI/UX</span>
-                                </div>
-                                <div class="project-year">2025</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-digital">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image-container">
-                                <img src="assets/img/portfolio/portfolio-2.jpg" alt="Digital Project" class="img-fluid" loading="lazy">
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-info">
-                                        <span class="project-category">Digital Experience</span>
-                                        <h4>Marketing Campaign</h4>
-                                    </div>
-                                    <div class="portfolio-actions">
-                                        <a href="assets/img/portfolio/portfolio-2.jpg" class="glightbox portfolio-link">
-                                            <i class="bi bi-plus-lg"></i>
-                                        </a>
-                                        <a href="story-borderless.html" class="portfolio-details" title="Read the Story">
-                                            <i class="bi bi-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-meta">
-                                <div class="project-tags">
-                                    <span class="tag">Newsletter Design</span>
-                                    <span class="tag">Campaign</span>
-                                </div>
-                                <div class="project-year">2024</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image-container">
-                                <img src="assets/img/portfolio/portfolio-3.jpg" alt="Strategy Project" class="img-fluid" loading="lazy">
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-info">
-                                        <span class="project-category">Creative Design</span>
-                                        <h4>Food Content Creation</h4>
-                                    </div>
-                                    <div class="portfolio-actions">
-                                        <a href="assets/img/portfolio/portfolio-3.jpg" class="glightbox portfolio-link">
-                                            <i class="bi bi-plus-lg"></i>
-                                        </a>
-                                        <a href="story-tiktok.html" class="portfolio-details" title="Read the Story">
-                                            <i class="bi bi-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-meta">
-                                <div class="project-tags">
-                                    <span class="tag">Creative</span>
-                                    <span class="tag">Branding</span>
-                                    <span class="tag">Strategy</span>
-                                    <span class="tag">Content Creating</span>
-                                </div>
-                                <div class="project-year">2023</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image-container">
-                                <img src="assets/img/portfolio/portfolio-4.jpg" alt="Development Project" class="img-fluid" loading="lazy">
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-info">
-                                        <span class="project-category">Branding Strategy</span>
-                                        <h4>Personal Portfolio</h4>
-                                    </div>
-                                    <div class="portfolio-actions">
-                                        <a href="assets/img/portfolio/portfolio-4.jpg" class="glightbox portfolio-link">
-                                            <i class="bi bi-plus-lg"></i>
-                                        </a>
-                                        <a href="story-canva.html" class="portfolio-details" title="Read the Story">
-                                            <i class="bi bi-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-meta">
-                                <div class="project-tags">
-                                    <span class="tag">Branding</span>
-                                    <span class="tag">Identity</span>
-                                    <span class="tag">Creative</span>
-                                </div>
-                                <div class="project-year">2024</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-development filter-strategy">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image-container">
-                                <img src="assets/img/portfolio/portfolio-paive.png" alt="pAIve AI Project" class="img-fluid" loading="lazy">
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-info">
-                                        <span class="project-category">AI-Assisted Development</span>
-                                        <h4>pAIve Career Dashboard</h4>
-                                    </div>
-                                    <div class="portfolio-actions">
-                                        <a href="assets/img/portfolio/portfolio-paive.png" class="glightbox portfolio-link">
-                                            <i class="bi bi-plus-lg"></i>
-                                        </a>
-                                        <a href="story-paive.html" class="portfolio-details" title="Read the Story">
-                                            <i class="bi bi-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-meta">
-                                <div class="project-tags">
-                                    <span class="tag">Vibe Coding</span>
-                                    <span class="tag">AI</span>
-                                    <span class="tag">Product Design</span>
-                                    <span class="tag">React</span>
-                                </div>
-                                <div class="project-year">2026</div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="portfolio-bottom" data-aos="fade-up" data-aos-delay="400">
-                    <div class="row align-items-center">
-                        <div class="col-lg-8">
-                            <h3>Like what you see?</h3>
-                            <p>If you think I could be a good fit for your company, I would love to hear from you! :)</p>
-                        </div>
-                        <div class="col-lg-4 text-lg-end">
-                            <a href="#contact" class="btn btn-accent">Let's Work Together</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-    </section>
-
-    <section id="contact" class="contact section">
-
-        <style>
-            /* 1. Hide status messages by default */
-            .loading, .error-message, .sent-message {
-                display: none;
-                margin-bottom: 15px;
-                font-weight: 600;
-            }
-            .loading { color: #ff4a17; }
-            .error-message { color: red; }
-
-            /* --- UPDATED SENT MESSAGE STYLE --- */
-            .sent-message {
-                color: #ffffff; /* Changed from green to White */
-                font-family: "Raleway", sans-serif; /* Changed to personable font */
-                font-size: 1.1rem;
-                text-align: center;
-                background: rgba(255, 255, 255, 0.1);
-                padding: 15px;
-                border-radius: 10px;
-                border: 1px solid rgba(255,255,255,0.2);
-            }
-
-            /* 2. Match 'Get Started' Button Style */
-            .btn-send {
-                background: #ff4a17;
-                color: white;
-                padding: 12px 35px; /* Slightly larger for touch targets */
-                border-radius: 50px;
-                border: none; /* Removes default button border */
-                transition: 0.3s;
-                font-weight: 500;
-                font-family: "Raleway", sans-serif;
-            }
-            .btn-send:hover {
-                background: #e03a0d; /* Darker orange on hover */
-                color: white;
-            }
-        </style>
-
-        <div class="container section-title" data-aos="fade-up">
-            <span class="subtitle">Contact</span>
-            <h2>Reaching Out</h2>
-            <p>I look forward to hearing from you!</p>
-        </div>
-
-        <div class="container">
-
-            <div class="row gy-4">
-
-                <div class="col-lg-4">
-                    <div class="info-item">
-                        <div class="icon-wrapper">
-                            <i class="bi bi-geo-alt"></i>
-                        </div>
-                        <div>
-                            <h3>Location</h3>
-                            <p>Singapore based, open to travel overseas</p>
-                        </div>
-                    </div>
-
-                    <div class="info-item">
-                        <div class="icon-wrapper">
-                            <i class="bi bi-envelope"></i>
-                        </div>
-                        <div>
-                            <h3>Email Me</h3>
-                            <p>jovianne.tjiunardi7@gmail.com</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-8">
-                    <form id="contact-form" action="https://formspree.io/f/movgnypp" method="post" role="form">
-                        <div class="row gy-4">
-
-                            <div class="col-md-6">
-                                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                            </div>
-
-                            <div class="col-md-6">
-                                <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-                            </div>
-
-                            <div class="col-md-12">
-                                <input type="text" class="form-control" name="subject" placeholder="Subject" required>
-                            </div>
-
-                            <div class="col-md-12">
-                                <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-                            </div>
-
-                            <div class="col-md-12 text-center">
-                                <div class="loading">Loading...</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">I've received your message and will aim to respond to you within a day, thank you!</div>
-
-                                <button type="submit" class="btn-send">Send Message</button>
-                            </div>
-
-                        </div>
-                    </form>
-                </div>
-
-            </div>
-
-        </div>
-
-        <script>
-            var form = document.getElementById("contact-form");
-
-            async function handleSubmit(event) {
-                event.preventDefault();
-                var status = document.querySelector(".sent-message");
-                var loading = document.querySelector(".loading");
-                var error = document.querySelector(".error-message");
-                var button = document.querySelector(".btn-send");
-                var data = new FormData(event.target);
-
-                // UI State: Loading
-                loading.style.display = "block";
-                error.style.display = "none";
-                status.style.display = "none";
-                button.style.display = "none"; // Hide button so they don't click twice
-
-                fetch(event.target.action, {
-                    method: form.method,
-                    body: data,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                }).then(response => {
-                    loading.style.display = "none"; // Hide loading
-                    if (response.ok) {
-                        status.style.display = "block"; // Show Success
-                        form.reset(); // Clear the form
-                    } else {
-                        response.json().then(data => {
-                            if (Object.hasOwn(data, 'errors')) {
-                                error.innerHTML = data["errors"].map(error => error["message"]).join(", ");
-                            } else {
-                                error.innerHTML = "Oops! There was a problem submitting your form";
-                            }
-                            error.style.display = "block";
-                            button.style.display = "inline-block"; // Show button again to retry
-                        })
-                    }
-                }).catch(error => {
-                    loading.style.display = "none";
-                    error.innerHTML = "Oops! There was a problem submitting your form";
-                    error.style.display = "block";
-                    button.style.display = "inline-block";
-                });
-            }
-            form.addEventListener("submit", handleSubmit);
-        </script>
-
-    </section>
-
-</main>
-
-<footer id="footer" class="footer">
-
-    <div class="container footer-top">
-        <div class="row gy-4">
-
-            <div class="col-lg-5 col-md-12 footer-about">
-                <a href="index.html" class="logo d-flex align-items-center">
-                    <span class="sitename">Jovianne's Portfolio</span>
-                </a>
-                <p class="mt-3"><strong>Bridging the gap between creative vision and technical execution.</strong></p>
-                <p>I act as a translator between stakeholders and developers, turning abstract market trends into data-driven business logic. My goal is simple: to ensure digital products aren't just launched, but engineered for growth.</p>
-                <div class="social-links d-flex mt-4">
-                    <a href="https://www.linkedin.com/in/jovianne-tjiunardi-232835171/"><i class="bi bi-linkedin"></i></a>
-                    <a href="https://github.com/joviannesocial-arch"><i class="bi bi-github"></i></a>
-                    <a href="mailto:jovianne.tjiunardi7@gmail.com"><i class="bi bi-envelope"></i></a>
-                </div>
-            </div>
-
-            <div class="col-lg-2 col-6 footer-links">
-                <h4>Explore</h4>
-                <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#cv-download">Resume</a></li>
-                    <li><a href="#resume">Experience & Background</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="col-lg-2 col-6 footer-links">
-                <h4>Core Expertise</h4>
-                <ul>
-                    <li><a href="#services">Business Analysis</a></li>
-                    <li><a href="#services">Content Strategy</a></li>
-                    <li><a href="#services">Agile Management</a></li>
-                    <li><a href="#services">UI/UX Design</a></li>
-                    <li><a href="#services">Data Visualisation</a></li>
-                </ul>
-            </div>
-
-            <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-                <h4>Contact Me</h4>
-                <p><strong>Email:</strong> <span>jovianne.tjiunardi7@gmail.com</span></p>
-                <p>Based in Singapore</p>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="container copyright text-center mt-4">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Craftivo</strong> <span>All Rights Reserved</span></p>
-        <div class="credits">
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
-    </div>
-
-</footer>
-
-<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-<div id="preloader"></div>
-
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/typed.js/typed.umd.js"></script>
-<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-<script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 

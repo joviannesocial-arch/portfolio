@@ -325,29 +325,34 @@
         }
 
         .hero .container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            position: absolute !important;
+            top: 50% !important;
+            left: 0 !important;
+            right: 0 !important;
+            transform: translateY(-50%) !important;
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            justify-content: center !important;
             z-index: 2;
-            text-align: center;
+            text-align: center !important;
             width: 100% !important;
-            max-width: 100% !important;
-            padding: 0 40px;
+            max-width: none !important;
+            margin: 0 !important;
+            padding: 0 40px !important;
         }
 
         .hero .container .row {
-            width: 100%;
-            margin: 0;
+            width: 100% !important;
+            max-width: none !important;
+            margin: 0 !important;
+            justify-content: center !important;
         }
 
         .hero .container .col-lg-8 {
             max-width: 100% !important;
             flex: 0 0 100% !important;
+            padding: 0 !important;
         }
 
         .hero h2 {
@@ -1498,24 +1503,56 @@
                     border-color: rgba(255, 255, 255, 0.3) !important;
                 }
 
-                /* 2. Match 'Get Started' Button Style */
+                /* 2. iOS-Style Bubble Pop Button */
                 .btn-send {
-                    background: #ff4a17;
+                    background: linear-gradient(135deg, #ff4a17 0%, #ff6b3d 100%);
                     color: white;
-                    padding: 12px 35px;
-                    /* Slightly larger for touch targets */
+                    padding: 14px 40px;
                     border-radius: 50px;
                     border: none;
-                    /* Removes default button border */
-                    transition: 0.3s;
-                    font-weight: 500;
+                    font-weight: 600;
                     font-family: "Raleway", sans-serif;
+                    font-size: 1rem;
+                    cursor: pointer;
+                    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+                    box-shadow: 0 4px 15px rgba(255, 74, 23, 0.3),
+                        0 1px 3px rgba(0, 0, 0, 0.1);
+                    position: relative;
+                    overflow: hidden;
+                    transform: scale(1);
+                }
+
+                .btn-send::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 0;
+                    height: 0;
+                    border-radius: 50%;
+                    background: rgba(255, 255, 255, 0.3);
+                    transform: translate(-50%, -50%);
+                    transition: width 0.6s, height 0.6s;
                 }
 
                 .btn-send:hover {
-                    background: #e03a0d;
-                    /* Darker orange on hover */
-                    color: white;
+                    background: linear-gradient(135deg, #ff5c28 0%, #ff7d4e 100%);
+                    transform: scale(1.05);
+                    box-shadow: 0 8px 25px rgba(255, 74, 23, 0.4),
+                        0 3px 8px rgba(0, 0, 0, 0.15);
+                }
+
+                .btn-send:active {
+                    transform: scale(0.95);
+                    box-shadow: 0 2px 8px rgba(255, 74, 23, 0.3),
+                        0 1px 2px rgba(0, 0, 0, 0.1);
+                    transition: all 0.1s cubic-bezier(0.34, 1.56, 0.64, 1);
+                }
+
+                .btn-send:active::before {
+                    width: 300px;
+                    height: 300px;
+                    transition: width 0.3s, height 0.3s;
                 }
             </style>
 

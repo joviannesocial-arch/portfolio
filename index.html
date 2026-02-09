@@ -306,9 +306,28 @@
             font-size: 1.2rem;
         }
 
-        /* Hero section spacing for floating nav */
+        /* Hero section with curved container wrapper */
         .hero {
-            padding-top: 120px !important;
+            padding: 120px 20px 60px !important;
+            position: relative;
+        }
+
+        .hero img {
+            width: 95%;
+            max-width: 1400px;
+            margin: 0 auto;
+            display: block;
+            border-radius: 24px;
+            object-fit: cover;
+            height: 600px;
+        }
+
+        .hero .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
         }
 
 

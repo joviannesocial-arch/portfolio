@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,354 +25,489 @@
 
     <link href="assets/css/main.css" rel="stylesheet">
 
-    <style>
-        /* Change the background of the whole page */
-        body,
-        .main,
-        .dark-background,
-        section {
-            background-color: #585115 !important;
-            /* Your chosen Green/Brown */
-            color: #ffffff !important;
-        }
+    /* === OFFMENU-INSPIRED REDESIGN === */
+    :root {
+    --offmenu-green-dark: #0d3b0d;
+    --offmenu-green-mid: #1a6b1a;
+    --offmenu-green-light: #2e8b2e;
+    --offmenu-gradient: linear-gradient(135deg, #0d3b0d 0%, #1a6b1a 50%, #2e8b2e 100%);
+    --offmenu-accent: #ff4a17;
+    }
 
-        /* Fix Link Hover Colors for readability */
-        a {
-            color: #ff4a17;
-            text-decoration: none;
-            transition: 0.3s;
-        }
+    /* Change the background of the whole page */
+    body,
+    .main,
+    .dark-background,
+    section {
+    background: var(--offmenu-gradient) !important;
+    background-attachment: fixed !important;
+    color: #ffffff !important;
+    font-family: 'Archivo', sans-serif !important;
+    }
 
-        a:hover {
-            color: #fff;
-        }
+    /* Headings use Archivo Black */
+    h1, h2, h3, h4, h5, h6, .sitename {
+    font-family: 'Archivo Black', sans-serif !important;
+    letter-spacing: -0.02em;
+    }
 
-        /* --- REDUCE HEADER FONT SIZE --- */
-        .sitename {
-            font-size: 1.5rem !important;
-            /* Change 1.5rem to 1.2rem if you want it even smaller */
-        }
+    /* Fix Link Hover Colors for readability */
+    a {
+    color: var(--offmenu-accent);
+    text-decoration: none;
+    transition: 0.3s;
+    }
 
-        /* --- SKILLS DASHBOARD STYLES --- */
-        .skills-card {
-            background: rgba(0, 0, 0, 0.25);
-            padding: 40px;
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            margin-top: 20px;
-        }
+    a:hover {
+    color: #fff;
+    }
 
-        .nav-pills {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 5px;
-            border-radius: 50px;
-            display: inline-flex;
-            margin-bottom: 25px;
-        }
+    /* === FLOATING NAVBAR === */
+    .header {
+    background: rgba(255, 255, 255, 0.95) !important;
+    border-radius: 100px;
+    margin: 20px auto;
+    max-width: 1100px;
+    padding: 10px 30px !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+    }
 
-        .nav-pills .nav-link {
-            border-radius: 50px;
-            color: rgba(255, 255, 255, 0.7);
-            padding: 10px 30px;
-            font-weight: 600;
-            transition: 0.3s;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-size: 0.9rem;
-        }
+    .header .sitename {
+    color: #111 !important;
+    font-size: 1.3rem !important;
+    }
 
-        .nav-pills .nav-link.active {
-            background-color: #ff4a17;
-            color: white;
-            box-shadow: 0 4px 15px rgba(255, 74, 23, 0.4);
-        }
+    .header .navmenu ul li a {
+    color: #333 !important;
+    font-weight: 500;
+    }
 
-        /* --- FIXED: ORANGE PROGRESS BARS --- */
-        .progress {
-            height: 10px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 50px;
-            margin-top: 10px;
-        }
+    .header .navmenu ul li a:hover,
+    .header .navmenu ul li a.active {
+    color: var(--offmenu-accent) !important;
+    }
 
-        .progress-bar {
-            background-color: #ff4a17 !important;
-            border-radius: 50px;
-        }
+    .header .btn-getstarted {
+    background: #111 !important;
+    color: #fff !important;
+    border-radius: 50px;
+    padding: 10px 25px;
+    font-weight: 600;
+    }
 
-        /* Soft Skill Pills Style */
-        .soft-skill-tag {
-            background: rgba(255, 255, 255, 0.1);
-            color: #fff;
-            padding: 8px 18px;
-            border-radius: 8px;
-            margin: 5px;
-            display: inline-block;
-            font-size: 0.9rem;
-            font-weight: 500;
-            border-left: 3px solid #ff4a17;
-        }
+    .header .btn-getstarted:hover {
+    background: var(--offmenu-accent) !important;
+    }
 
-        /* Contact Form Styles */
-        .loading,
-        .error-message,
-        .sent-message {
-            display: none;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
+    /* === CURVED HERO CONTAINER === */
+    .hero {
+    padding-top: 140px !important;
+    min-height: 100vh;
+    position: relative;
+    }
 
-        .loading {
-            color: #ff4a17;
-        }
+    .hero .container {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+    padding: 60px 40px;
+    backdrop-filter: blur(8px);
+    max-width: 800px;
+    }
 
-        .error-message {
-            color: red;
-        }
+    /* === PROJECTS SECTION HOVER ANIMATION === */
+    .portfolio-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
 
-        .sent-message {
-            color: #ffffff;
-            font-family: "Raleway", sans-serif;
-            font-size: 1.1rem;
-            text-align: center;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 15px;
-            border-radius: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
+    .portfolio-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    }
 
-        .btn-send {
-            background: #ff4a17;
-            color: white;
-            padding: 12px 35px;
-            border-radius: 50px;
-            border: none;
-            transition: 0.3s;
-            font-weight: 500;
-            font-family: "Raleway", sans-serif;
-        }
+    .portfolio-card .portfolio-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 60%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 25px;
+    }
 
-        .btn-send:hover {
-            background: #e03a0d;
-            color: white;
-        }
+    .portfolio-card:hover .portfolio-overlay {
+    opacity: 1;
+    }
 
-        /* ======================================================
-           EXPERIENCE & BACKGROUND — "Fintech" Redesign
-        ====================================================== */
-        #resume.resume.section.resume-fintech {
-            background: #585115 !important;
-            /* Original Olive Green */
-            position: relative;
-            overflow: hidden;
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
-        }
+    .portfolio-overlay h4 {
+    color: #fff;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    transform: translateY(20px);
+    transition: transform 0.4s ease;
+    }
 
-        /* No overlay — keep background pure */
+    .portfolio-card:hover .portfolio-overlay h4 {
+    transform: translateY(0);
+    }
 
-        #resume.resume-fintech .section-title .subtitle {
-            color: #ff4a17;
-            font-family: 'Inter', sans-serif;
-            font-weight: 600;
-            letter-spacing: 2px;
-        }
+    .portfolio-overlay .project-category {
+    color: var(--offmenu-accent);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transform: translateY(20px);
+    transition: transform 0.4s ease 0.05s;
+    }
 
-        #resume.resume-fintech .section-title h2 {
-            font-family: 'Raleway', sans-serif;
-            color: #ffffff;
-        }
+    .portfolio-card:hover .portfolio-overlay .project-category {
+    transform: translateY(0);
+    }
+
+    .portfolio-actions {
+    margin-top: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease 0.1s;
+    }
+
+    .portfolio-card:hover .portfolio-actions {
+    opacity: 1;
+    }
+
+    /* --- REDUCE HEADER FONT SIZE --- */
+    .sitename {
+    font-size: 1.3rem !important;
+    }
+
+    /* --- SKILLS DASHBOARD STYLES --- */
+    .skills-card {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    margin-top: 20px;
+    }
+
+    .nav-pills {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 5px;
+    border-radius: 50px;
+    display: inline-flex;
+    margin-bottom: 25px;
+    }
+
+    .nav-pills .nav-link {
+    border-radius: 50px;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 10px 30px;
+    font-weight: 600;
+    transition: 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    }
+
+    .nav-pills .nav-link.active {
+    background-color: #ff4a17;
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 74, 23, 0.4);
+    }
+
+    /* --- FIXED: ORANGE PROGRESS BARS --- */
+    .progress {
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    margin-top: 10px;
+    }
+
+    .progress-bar {
+    background-color: #ff4a17 !important;
+    border-radius: 50px;
+    }
+
+    /* Soft Skill Pills Style */
+    .soft-skill-tag {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 8px;
+    margin: 5px;
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-left: 3px solid #ff4a17;
+    }
+
+    /* Contact Form Styles */
+    .loading,
+    .error-message,
+    .sent-message {
+    display: none;
+    margin-bottom: 15px;
+    font-weight: 600;
+    }
+
+    .loading {
+    color: #ff4a17;
+    }
+
+    .error-message {
+    color: red;
+    }
+
+    .sent-message {
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.1rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-send {
+    background: #ff4a17;
+    color: white;
+    padding: 12px 35px;
+    border-radius: 50px;
+    border: none;
+    transition: 0.3s;
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+    }
+
+    .btn-send:hover {
+    background: #e03a0d;
+    color: white;
+    }
+
+    /* ======================================================
+    EXPERIENCE & BACKGROUND — "Fintech" Redesign
+    ====================================================== */
+    #resume.resume.section.resume-fintech {
+    background: #585115 !important;
+    /* Original Olive Green */
+    position: relative;
+    overflow: hidden;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+
+    /* No overlay — keep background pure */
+
+    #resume.resume-fintech .section-title .subtitle {
+    color: #ff4a17;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    }
+
+    #resume.resume-fintech .section-title h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    }
 
 
-        /* ---- Shared glass card base ---- */
-        .glass-card {
-            background: rgba(0, 0, 0, 0.25);
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            border-radius: 16px;
-            padding: 28px 30px;
-            margin-bottom: 20px;
-            transition: all 0.35s ease;
-        }
+    /* ---- Shared glass card base ---- */
+    .glass-card {
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 28px 30px;
+    margin-bottom: 20px;
+    transition: all 0.35s ease;
+    }
 
-        .glass-card:hover {
-            background: rgba(0, 0, 0, 0.32);
-            border-color: rgba(255, 255, 255, 0.1);
-            transform: translateY(-3px);
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
-        }
+    .glass-card:hover {
+    background: rgba(0, 0, 0, 0.32);
+    border-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+    }
 
-        /* pAIve Featured Card — Glowing Border */
-        .glass-card.featured-glow {
-            border: 1px solid rgba(255, 74, 23, 0.3);
-            background: rgba(255, 74, 23, 0.06);
-            box-shadow: 0 0 25px rgba(255, 74, 23, 0.06);
-        }
+    /* pAIve Featured Card — Glowing Border */
+    .glass-card.featured-glow {
+    border: 1px solid rgba(255, 74, 23, 0.3);
+    background: rgba(255, 74, 23, 0.06);
+    box-shadow: 0 0 25px rgba(255, 74, 23, 0.06);
+    }
 
-        .glass-card.featured-glow:hover {
-            border-color: rgba(255, 74, 23, 0.45);
-            box-shadow: 0 0 40px rgba(255, 74, 23, 0.1), 0 12px 40px rgba(0, 0, 0, 0.25);
-        }
+    .glass-card.featured-glow:hover {
+    border-color: rgba(255, 74, 23, 0.45);
+    box-shadow: 0 0 40px rgba(255, 74, 23, 0.1), 0 12px 40px rgba(0, 0, 0, 0.25);
+    }
 
-        /* Card top row: icon + badge */
-        .glass-card .card-top {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 16px;
-        }
+    /* Card top row: icon + badge */
+    .glass-card .card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    }
 
-        .glass-card .card-icon {
-            width: 42px;
-            height: 42px;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.15rem;
-            flex-shrink: 0;
-        }
+    .glass-card .card-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+    flex-shrink: 0;
+    }
 
-        .glass-card .card-icon.icon-orange {
-            background: rgba(255, 74, 23, 0.15);
-            color: #ff4a17;
-        }
+    .glass-card .card-icon.icon-orange {
+    background: rgba(255, 74, 23, 0.15);
+    color: #ff4a17;
+    }
 
-        .glass-card .card-icon.icon-amber {
-            background: rgba(245, 158, 11, 0.15);
-            color: #fbbf24;
-        }
+    .glass-card .card-icon.icon-amber {
+    background: rgba(245, 158, 11, 0.15);
+    color: #fbbf24;
+    }
 
-        .glass-card .card-icon.icon-emerald {
-            background: rgba(16, 185, 129, 0.15);
-            color: #34d399;
-        }
+    .glass-card .card-icon.icon-emerald {
+    background: rgba(16, 185, 129, 0.15);
+    color: #34d399;
+    }
 
-        .glass-card .card-icon.icon-violet {
-            background: rgba(139, 92, 246, 0.15);
-            color: #a78bfa;
-        }
+    .glass-card .card-icon.icon-violet {
+    background: rgba(139, 92, 246, 0.15);
+    color: #a78bfa;
+    }
 
-        .glass-card .tag-badge {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.7rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            padding: 5px 14px;
-            border-radius: 50px;
-            background: rgba(255, 255, 255, 0.06);
-            color: rgba(255, 255, 255, 0.5);
-            border: 1px solid rgba(255, 255, 255, 0.06);
-        }
+    .glass-card .tag-badge {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 5px 14px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.06);
+    color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    }
 
-        .glass-card.featured-glow .tag-badge {
-            background: rgba(255, 74, 23, 0.12);
-            color: #ff4a17;
-            border-color: rgba(255, 74, 23, 0.2);
-        }
+    .glass-card.featured-glow .tag-badge {
+    background: rgba(255, 74, 23, 0.12);
+    color: #ff4a17;
+    border-color: rgba(255, 74, 23, 0.2);
+    }
 
-        .glass-card h3 {
-            font-family: 'Inter', sans-serif;
-            font-size: 1.15rem;
-            font-weight: 700;
-            color: #ffffff;
-            margin-bottom: 4px;
-            letter-spacing: -0.2px;
-        }
+    .glass-card h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 4px;
+    letter-spacing: -0.2px;
+    }
 
-        .glass-card .company-name {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.9rem;
-            font-weight: 500;
-            color: #ff4a17;
-            margin-bottom: 4px;
-        }
+    .glass-card .company-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #ff4a17;
+    margin-bottom: 4px;
+    }
 
-        .glass-card .duration {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.4);
-            font-weight: 500;
-            display: block;
-            margin-bottom: 12px;
-        }
+    .glass-card .duration {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 500;
+    display: block;
+    margin-bottom: 12px;
+    }
 
-        .glass-card .description {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.92rem;
-            line-height: 1.7;
-            color: rgba(255, 255, 255, 0.65);
-            margin-bottom: 0;
-        }
+    .glass-card .description {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.65);
+    margin-bottom: 0;
+    }
 
-        /* ---- Education side: override timeline to match ---- */
-        .resume-fintech .education-section .education-timeline .timeline-track {
-            padding-left: 0;
-        }
+    /* ---- Education side: override timeline to match ---- */
+    .resume-fintech .education-section .education-timeline .timeline-track {
+    padding-left: 0;
+    }
 
-        .resume-fintech .education-section .education-timeline .timeline-track::before {
-            display: none;
-        }
+    .resume-fintech .education-section .education-timeline .timeline-track::before {
+    display: none;
+    }
 
-        .resume-fintech .education-section .education-timeline .timeline-track .timeline-item {
-            margin-bottom: 20px;
-        }
+    .resume-fintech .education-section .education-timeline .timeline-track .timeline-item {
+    margin-bottom: 20px;
+    }
 
-        .resume-fintech .education-section .education-timeline .timeline-track .timeline-item .timeline-marker {
-            display: none;
-        }
+    .resume-fintech .education-section .education-timeline .timeline-track .timeline-item .timeline-marker {
+    display: none;
+    }
 
-        .resume-fintech .education-section .education-timeline .timeline-track .timeline-item .timeline-content {
-            background: rgba(0, 0, 0, 0.25);
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            border-radius: 16px;
-            padding: 24px 28px;
-            transition: all 0.35s ease;
-        }
+    .resume-fintech .education-section .education-timeline .timeline-track .timeline-item .timeline-content {
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 24px 28px;
+    transition: all 0.35s ease;
+    }
 
-        .resume-fintech .education-section .education-timeline .timeline-track .timeline-item .timeline-content:hover {
-            background: rgba(0, 0, 0, 0.32);
-            border-color: rgba(255, 255, 255, 0.1);
-            transform: translateY(-3px);
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
-        }
+    .resume-fintech .education-section .education-timeline .timeline-track .timeline-item .timeline-content:hover {
+    background: rgba(0, 0, 0, 0.32);
+    border-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+    }
 
-        .resume-fintech .timeline-content h4 {
-            font-family: 'Inter', sans-serif;
-            font-weight: 700;
-            font-size: 1rem;
-            letter-spacing: -0.2px;
-            color: #fff;
-        }
+    .resume-fintech .timeline-content h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: -0.2px;
+    color: #fff;
+    }
 
-        .resume-fintech .timeline-content .institution {
-            font-family: 'Inter', sans-serif;
-            color: rgba(255, 255, 255, 0.5);
-        }
+    .resume-fintech .timeline-content .institution {
+    font-family: 'Inter', sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+    }
 
-        .resume-fintech .education-meta .year-range {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.8rem !important;
-            background: rgba(255, 74, 23, 0.12) !important;
-            color: #ff4a17 !important;
-            padding: 4px 12px !important;
-            border-radius: 50px !important;
-        }
+    .resume-fintech .education-meta .year-range {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem !important;
+    background: rgba(255, 74, 23, 0.12) !important;
+    color: #ff4a17 !important;
+    padding: 4px 12px !important;
+    border-radius: 50px !important;
+    }
 
-        .resume-fintech .education-meta .degree-level {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.75rem !important;
-            color: rgba(255, 255, 255, 0.4) !important;
-        }
+    .resume-fintech .education-meta .degree-level {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem !important;
+    color: rgba(255, 255, 255, 0.4) !important;
+    }
 
-        .resume-fintech .certifications-list .cert-item {
-            border-bottom-color: rgba(255, 255, 255, 0.05) !important;
-        }
+    .resume-fintech .certifications-list .cert-item {
+    border-bottom-color: rgba(255, 255, 255, 0.05) !important;
+    }
 
-        .resume-fintech .certifications-list .cert-name {
-            font-family: 'Inter', sans-serif;
-            color: rgba(255, 255, 255, 0.75) !important;
-            font-size: 0.88rem !important;
-        }
+    .resume-fintech .certifications-list .cert-name {
+    font-family: 'Inter', sans-serif;
+    color: rgba(255, 255, 255, 0.75) !important;
+    font-size: 0.88rem !important;
+    }
     </style>
 </head>
 
@@ -865,7 +1000,7 @@
 
             <div class="container section-title" data-aos="fade-up">
                 <span class="subtitle">Portfolio</span>
-                <h2>View My Collection of Works</h2>
+                <h2>Projects</h2>
                 <p>Explore a selection of projects where I translate complex business goals into tangible digital
                     solutions.</p>
             </div>

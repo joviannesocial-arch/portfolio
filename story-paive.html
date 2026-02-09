@@ -458,37 +458,55 @@
                             <p>This is where Vibe Coding comes in. Instead of writing every line of code from scratch, I
                                 <strong>authored detailed, structured prompts</strong> that defined the persona, design
                                 system, data architecture, and component structure — then let AI generate the
-                                implementation while I directed and iterated.</p>
+                                implementation while I directed and iterated.
+                            </p>
 
                             <p>Here's the actual prompt structure I used:</p>
 
                             <div class="ai-prompt-block" data-aos="fade-up">
                                 <div class="prompt-label"><i class="bi bi-robot"></i> Prompt — Persona & Design System
                                 </div>
-                                <p class="prompt-text">"Act as a Senior Frontend Architect for a Series A Fintech
-                                    startup. We are building pAIve, a career coach intelligence platform. The design
-                                    must be Executive Grade — think Linear, Stripe, or Perplexity. Use the 'Blue Chip
-                                    Aesthetic': Slate-50 backgrounds, White cards, Blue-600 accents, Inter font with
-                                    tight tracking, Bento Grid layout with rounded-xl and soft shadows."</p>
+                                <p class="prompt-text">"Act as a Senior UI/UX Designer. Role: Implement 'Ready Player
+                                    One' Aesthetics & Glassmorphism.
+                                    Global Theme: Apply a Deep Purple Gradient background to the entire app. Replace all
+                                    'Solid White' containers with 'Glass' styling: background: rgba(255, 255, 255,
+                                    0.03), backdrop-filter: blur(16px), and a subtle white border.
+                                    Interactive Elements: Add a 'Holographic' glow to the Avatar selection cards
+                                    (box-shadow: 0 0 20px rgba(120, 80, 255, 0.4)). Ensure all text remains
+                                    high-contrast white/grey for readability on dark backgrounds."</p>
                             </div>
 
                             <div class="ai-prompt-block" data-aos="fade-up">
-                                <div class="prompt-label"><i class="bi bi-robot"></i> Prompt — Mock Data Architecture
+                                <div class="prompt-label"><i class="bi bi-robot"></i> Prompt — DATA ARCHITECTURE & LOGIC
                                 </div>
-                                <p class="prompt-text">"Create a strictly typed mock data object called mockCareerData
-                                    simulating a real API response for a user targeting 'Product Manager'. Include:
-                                    Match Score: 87%, Time Saved: 4.5 Hours, Skill Gaps: [SQL, API Design, Stakeholder
-                                    Mgmt], Salary Range: $5,500 – $8,200 SGD."</p>
+                                <p class="prompt-text">"Act as a Senior React Developer. Role: Implement Strict JSON
+                                    Resume Parsing.
+                                    System Instruction: Analyze the resume text and return ONLY a valid JSON object. Do
+                                    not include markdown.
+                                    Strict Schema Definition:
+                                    fullName: string
+                                    currentStatus: string (Must be one of: 'Student', 'Fresh Graduate', 'Career
+                                    Switcher')
+                                    education: array of objects { institution, degree, yearStart, yearEnd }
+                                    experience: array of objects { company, role, description, impact_metrics }
+                                    skills: array of strings
+                                    Logic Rule: If the user has graduated within the last 2 years and has no full-time
+                                    role, strictly classify 'currentStatus' as 'Fresh Graduate'."</p>
                             </div>
 
                             <div class="ai-prompt-block" data-aos="fade-up">
                                 <div class="prompt-label"><i class="bi bi-robot"></i> Prompt — Component Architecture
                                 </div>
-                                <p class="prompt-text">"Generate these components: A minimalist collapsible Sidebar with
-                                    navigation. A reusable MetricCard for displaying key stats. A RoadmapView as a
-                                    vertical timeline showing career steps. Use Framer Motion for staggered fade-in
-                                    animations. Make the search bar feel powerful — large, centered, with an 'Ask AI'
-                                    button."</p>
+                                <p class="prompt-text">"Act as a Senior Frontend Engineer. Role: Unify Onboarding Wizard
+                                    Components.
+                                    Task 1 (Refactor): Redesign the 'Communication Style' component. Convert the current
+                                    vertical list into a Grid Card Layout (3 Columns) to match the Avatar Selection
+                                    step.
+                                    Task 2 (Visuals): Each card must use the shared Glassmorphism style. content should
+                                    be centered: Icon (Top), Title (Middle), Description (Bottom).
+                                    Task 3 (State): Add a 'StepIndicator' badge at the top ({current} of {total}).
+                                    Ensure the header typography matches the 'Ready Player One' aesthetic defined in the
+                                    global theme."</p>
                             </div>
 
                             <div class="takeaway-box">
